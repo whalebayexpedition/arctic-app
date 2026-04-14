@@ -598,6 +598,55 @@ h3 {
   color: var(--text-body);
   opacity: .85;
 }
+
+/* ===== SECTION 05 · 囍 · FAMILY ===== */
+.family-section { position: relative; overflow: hidden; }
+.family-section h2 { color: #fff; }
+.family-subhead {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--lilac);
+  letter-spacing: .14em;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+.family-rule {
+  width: 2px;
+  height: 40px;
+  background: var(--rust);
+  margin: 28px 0 28px 2px;
+}
+.family-body {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 1.04rem;
+  line-height: 2.1;
+  color: var(--text-light);
+}
+.family-body p { margin-bottom: 14px; }
+.family-body strong {
+  color: var(--lilac);
+  font-weight: 400;
+}
+.family-image {
+  width: 100%;
+  margin: 36px 0 8px;
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+  transform: scale(1.06);
+  transition: transform 1.3s ease-out;
+}
+.family-image.visible { transform: scale(1); }
+.family-caption {
+  font-family: 'Cinzel', serif;
+  font-size: .68rem;
+  letter-spacing: .25em;
+  color: var(--rust);
+  text-transform: uppercase;
+  opacity: .8;
+  margin-top: 4px;
+}
 </style>
 </head>
 <body>
@@ -740,6 +789,32 @@ h3 {
         <p>甲板烤炉，船长的肉饼，冰山从船舷缓缓飘过。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 05 · 囍 · 远方的家 — THE FAMILY BOAT -->
+<!-- ============================================ -->
+<section class="section dark-section family-section" data-section="5">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">04</div>
+      <div class="en-eyebrow">The Family Boat</div>
+      <h2>囍 · 远方的家</h2>
+      <div class="family-subhead">一艘船，一个家。</div>
+      <div class="family-rule"></div>
+    </div>
+    <div class="family-body fade-in fade-in-delay-1">
+      <!-- CONTENT-TODO: family-paragraph — confirm wording with user before publish -->
+      <p>Tulu 是一艘因纽特家族的工作船。<strong>老父亲掌舵</strong>，<strong>母亲管厨房</strong>，<strong>儿子是大副</strong>。从早到晚的秩序都是他们的。</p>
+      <p>他们不把客人当客人。他们不会讲一套专业导游的台词，不会在晚餐时演奏传统乐器给你看。他们只是把船开好、把饭做好、把你送到天光最好的地方。</p>
+      <p>船上有来自中国的辣椒面、老干妈、泡面和酸辣粉，数量有限。<br>客舱窗边挂着红灯笼和金鱼剪纸 —— 去年某位客人留下的。<br>老船长没摘下来。</p>
+    </div>
+    <img src="assets/web/IMG_20251002_132109.jpg"
+         class="family-image fade-in fade-in-delay-2"
+         alt="因纽特家族船 Tulu 客舱 · 中国红灯笼与囍字"
+         loading="lazy">
+    <div class="family-caption">* NUUK · 2025 · CABIN DETAIL</div>
   </div>
 </section>
 
