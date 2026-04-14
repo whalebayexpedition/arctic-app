@@ -764,6 +764,70 @@ h3 {
   opacity: .8;
   font-weight: 300;
 }
+
+/* ===== SECTION 08 · WHY NOW ===== */
+.why-section {
+  position: relative;
+  background: var(--midnight);
+  overflow: hidden;
+}
+.why-section .bg {
+  position: absolute; inset: 0;
+  background: url('assets/web/IMG_20251003_083946.jpg') center center / cover no-repeat;
+  opacity: .20;
+  filter: brightness(.7) saturate(1.1);
+}
+.why-section .scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(17,26,38,.75) 0%, rgba(17,26,38,.9) 100%);
+}
+.why-section .section-inner { position: relative; z-index: 2; }
+.why-section h2 { color: #fff; }
+.why-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin: 40px 0 50px;
+}
+@media (min-width: 640px) {
+  .why-cols { grid-template-columns: repeat(3, 1fr); }
+}
+.why-col {
+  text-align: center;
+  padding: 20px 8px;
+}
+.why-col .icon {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .25em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.why-col h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: .15em;
+  margin-bottom: 12px;
+}
+.why-col p {
+  font-size: .88rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: rgba(255,255,255,.72);
+}
+.why-closing {
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2.0;
+  color: var(--lilac);
+  letter-spacing: .1em;
+  margin-top: 20px;
+}
 </style>
 </head>
 <body>
@@ -1073,6 +1137,43 @@ h3 {
         <h4>Sermitsiaq · 神山</h4>
         <p>纳努克地标的锯齿山，船长知道一处秘密老鹰巢穴。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 08 · 九月 · 十月 — WHY NOW -->
+<!-- ============================================ -->
+<section class="section midnight-section why-section" data-section="8">
+  <div class="bg"></div>
+  <div class="scrim"></div>
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">07</div>
+      <div class="en-eyebrow">Why September &amp; October</div>
+      <h2>为何是九月十月</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="why-cols fade-in fade-in-delay-1">
+      <div class="why-col">
+        <div class="icon">DAY · 白昼</div>
+        <h4>10–12 小时</h4>
+        <p>白昼仍长，徒步与航行不受限，苔原正处金黄峰值。</p>
+      </div>
+      <div class="why-col">
+        <div class="icon">NIGHT · 黑夜</div>
+        <h4>极光大年</h4>
+        <p>极光 KP 窗口活跃，北向峡湾视野开阔，追光成功率极高。</p>
+      </div>
+      <div class="why-col">
+        <div class="icon">ICE · 冰况</div>
+        <h4>峡湾未封</h4>
+        <p>海冰尚未锁湾，船只通达自如，首场雪亦在月末才偶现。</p>
+      </div>
+    </div>
+    <div class="why-closing fade-in fade-in-delay-2">
+      夏日喧哗已散，冬日门扉未闭。<br>
+      只有这两个月。
     </div>
   </div>
 </section>
