@@ -720,6 +720,50 @@ h3 {
   text-transform: uppercase;
   text-align: center;
 }
+
+/* ===== SECTION 07 · FJORD SITES ===== */
+.sites-section { padding: 100px 0; }
+.sites-section h2 { color: var(--text-dark); }
+.fjord-map {
+  width: 100%;
+  max-width: 520px;
+  margin: 30px auto 40px;
+  display: block;
+}
+.sites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .sites-grid { gap: 14px; }
+}
+.site-card {
+  display: flex;
+  flex-direction: column;
+}
+.site-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.site-card h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 14px 0 4px;
+  letter-spacing: .06em;
+}
+.site-card p {
+  font-size: .82rem;
+  line-height: 1.7;
+  color: var(--text-body);
+  opacity: .8;
+  font-weight: 300;
+}
 </style>
 </head>
 <body>
@@ -961,6 +1005,75 @@ h3 {
     <div class="cph-strip bottom fade-in fade-in-delay-3">Day 10–11 · 哥本哈根 · 回国 · CA878</div>
 
     <div class="score-note">* 示意日程 · 以实际出发为准</div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 07 · 峡湾图景 — FJORD SITES -->
+<!-- ============================================ -->
+<section class="section content-section sites-section" data-section="7">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">06</div>
+      <div class="en-eyebrow">Fjord Sites</div>
+      <h2>峡湾图景</h2>
+      <div class="gold-line"></div>
+      <div class="body-text body-text-serif">
+        <p>纳努克峡湾由四条支湾编织而成。我们的船沿途停靠四处 —— 无人村、射击湾、隐秘餐厅、神山脚下。</p>
+      </div>
+    </div>
+
+    <!-- simplified fjord map -->
+    <svg class="fjord-map fade-in fade-in-delay-1" viewBox="0 0 520 380" aria-label="纳努克峡湾 · 航行路线示意图">
+      <defs>
+        <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <circle cx="1" cy="1" r=".7" fill="rgba(216,154,78,.2)"/>
+        </pattern>
+      </defs>
+      <rect width="520" height="380" fill="#F2EBE1"/>
+      <rect width="520" height="380" fill="url(#dotGrid)"/>
+      <!-- stylized coastline -->
+      <path d="M20,180 C60,120 110,90 150,120 C190,140 210,100 250,110 C290,120 320,90 360,120 C400,150 440,130 500,160 L500,380 L20,380 Z" fill="rgba(74,106,124,.22)" stroke="rgba(74,106,124,.5)" stroke-width="1"/>
+      <!-- dotted route -->
+      <path d="M140,220 Q190,200 230,210 T310,200 T390,180" stroke="#D89A4E" stroke-width="1.5" fill="none" stroke-dasharray="3 4"/>
+      <!-- pins -->
+      <g font-family="Cinzel, serif" font-size="10" fill="#1a1a2e">
+        <circle cx="140" cy="220" r="5" fill="#D89A4E"/>
+        <text x="150" y="225">Nuuk</text>
+        <circle cx="210" cy="210" r="4" fill="#9A4A35"/>
+        <text x="218" y="215" font-size="9">Qoornoq</text>
+        <circle cx="270" cy="200" r="4" fill="#9A4A35"/>
+        <text x="278" y="205" font-size="9">Sulussugutip</text>
+        <circle cx="340" cy="190" r="4" fill="#9A4A35"/>
+        <text x="348" y="195" font-size="9">Qooqqut</text>
+        <circle cx="170" cy="160" r="4" fill="#6FBF8E"/>
+        <text x="178" y="165" font-size="9">Sermitsiaq</text>
+      </g>
+      <text x="260" y="40" text-anchor="middle" font-family="Cinzel, serif" font-size="11" letter-spacing="3" fill="#D89A4E">NUUK FJORD · ROUTE</text>
+    </svg>
+
+    <div class="sites-grid fade-in fade-in-delay-2">
+      <div class="site-card">
+        <img src="assets/web/IMG_20251002_174204.jpg" alt="Qoornoq 无人村" loading="lazy">
+        <h4>Qoornoq · 无人村</h4>
+        <p>荒废的因纽特聚落，彩色木屋仍在，徒步可达山脊。</p>
+      </div>
+      <div class="site-card">
+        <img src="assets/web/IMG_20251005_111712.jpg" alt="Sulussugutip 峡湾" loading="lazy">
+        <h4>Sulussugutip · 射击湾</h4>
+        <p>北极野兔与驯鹿的领地，因纽特野外狩猎课程。</p>
+      </div>
+      <div class="site-card">
+        <img src="assets/web/IMG_20250929_192837.jpg" alt="Qooqqut 峡湾餐厅" loading="lazy">
+        <h4>Qooqqut · 隐秘餐厅</h4>
+        <p>徒步与手钓之后，当地做法烹饪我们当日的渔获。</p>
+      </div>
+      <div class="site-card">
+        <img src="assets/web/IMG_20251003_083946.jpg" alt="Sermitsiaq 神山" loading="lazy">
+        <h4>Sermitsiaq · 神山</h4>
+        <p>纳努克地标的锯齿山，船长知道一处秘密老鹰巢穴。</p>
+      </div>
+    </div>
   </div>
 </section>
 
