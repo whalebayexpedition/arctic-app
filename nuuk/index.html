@@ -471,6 +471,86 @@ h3 {
   letter-spacing: .22em;
   text-transform: uppercase;
 }
+
+/* ===== SECTION 03 · AURORA NIGHTS ===== */
+.aurora-section {
+  color: #fff;
+  overflow: hidden;
+}
+.aurora-section .full-image-bg {
+  filter: brightness(.75) saturate(1.2);
+}
+.aurora-shimmer {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 40%,
+    rgba(111,191,142,.22) 0%,
+    rgba(231,182,196,.10) 35%,
+    rgba(14,22,32,0) 70%);
+  mix-blend-mode: screen;
+  animation: auroraDrift 8s ease-in-out infinite;
+}
+@keyframes auroraDrift {
+  0%, 100% { transform: translate(-2%, 0) scale(1.02); opacity: .85; }
+  50%      { transform: translate(2%, -3%) scale(1.08); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aurora-shimmer { animation: none; }
+}
+.aurora-section .full-image-content {
+  justify-content: center;
+}
+.aurora-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  letter-spacing: .22em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.aurora-movements {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 56px;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,.92);
+  text-align: center;
+}
+.aurora-movements .mv .num {
+  color: var(--emerald);
+  font-family: 'Cinzel', serif;
+  font-size: .78rem;
+  letter-spacing: .3em;
+  display: block;
+  margin-bottom: 4px;
+}
+.aurora-quote {
+  margin-top: auto;
+  padding-top: 32px;
+  border-top: 1px solid rgba(216,154,78,.35);
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--lilac);
+  text-align: center;
+  line-height: 1.9;
+}
+.aurora-quote-attr {
+  display: block;
+  margin-top: 14px;
+  font-family: 'Cinzel', serif;
+  font-size: .68rem;
+  font-style: normal;
+  letter-spacing: .25em;
+  color: rgba(255,255,255,.55);
+  text-transform: uppercase;
+}
 </style>
 </head>
 <body>
@@ -551,6 +631,28 @@ h3 {
          class="image-rounded fade-in fade-in-delay-2"
          alt="纳努克港口清晨 · 公寓三窗望海"
          loading="lazy">
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 03 · 追光之夜 — AURORA NIGHTS -->
+<!-- ============================================ -->
+<section class="full-image-section section aurora-section" data-section="3">
+  <div class="full-image-bg" style="background-image:url('assets/web/Aurora.jpg');"></div>
+  <div class="aurora-shimmer"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.55) 0%,rgba(7,12,18,.35) 40%,rgba(7,12,18,.85) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="section-number-light" style="text-align:center">02</div></div>
+    <h2 class="aurora-title fade-in fade-in-delay-1">追光之夜</h2>
+    <div class="aurora-movements fade-in fade-in-delay-2">
+      <div class="mv"><span class="num">一</span>船长的敲门声</div>
+      <div class="mv"><span class="num">二</span>甲板上的羽绒服与惊叹</div>
+      <div class="mv"><span class="num">三</span>绿帘子落下，没有人说话</div>
+    </div>
+    <div class="aurora-quote fade-in fade-in-delay-3">
+      「今年是极光大年，追光成功概率极高。」
+      <span class="aurora-quote-attr">— 姚雪霏 · 极地向导</span>
+    </div>
   </div>
 </section>
 
