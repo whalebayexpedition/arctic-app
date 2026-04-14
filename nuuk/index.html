@@ -647,6 +647,79 @@ h3 {
   opacity: .8;
   margin-top: 4px;
 }
+
+/* ===== SECTION 06 · SEVEN-DAY SCORE ===== */
+.score-section h2 { color: #fff; }
+.score-subhead {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: .98rem;
+  color: var(--lilac);
+  opacity: .85;
+  margin-bottom: 30px;
+  letter-spacing: .06em;
+}
+.cph-strip {
+  padding: 14px 0;
+  border-top: 1px solid rgba(216,154,78,.25);
+  border-bottom: 1px solid rgba(216,154,78,.25);
+  margin-bottom: 28px;
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .25em;
+  color: rgba(255,255,255,.55);
+  text-transform: uppercase;
+}
+.cph-strip.bottom { margin-bottom: 0; margin-top: 28px; }
+.day-ribbon {
+  display: flex;
+  flex-direction: column;
+}
+.day-row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(216,154,78,.14);
+  align-items: baseline;
+}
+.day-row:last-child { border-bottom: none; }
+.day-label {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .22em;
+  color: var(--amber);
+}
+.day-label .date {
+  display: block;
+  margin-top: 2px;
+  font-size: .78rem;
+  color: rgba(255,255,255,.55);
+}
+.day-body .place {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #fff;
+  letter-spacing: .05em;
+  margin-bottom: 4px;
+}
+.day-body .desc {
+  font-size: .88rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.score-note {
+  margin-top: 22px;
+  font-family: 'Cinzel', serif;
+  font-size: .66rem;
+  letter-spacing: .22em;
+  color: rgba(255,255,255,.4);
+  text-transform: uppercase;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -815,6 +888,79 @@ h3 {
          alt="因纽特家族船 Tulu 客舱 · 中国红灯笼与囍字"
          loading="lazy">
     <div class="family-caption">* NUUK · 2025 · CABIN DETAIL</div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 06 · 七日简谱 — SEVEN-DAY SCORE -->
+<!-- ============================================ -->
+<section class="section dark-section score-section" data-section="6">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">05</div>
+      <div class="en-eyebrow">Seven-Day Score</div>
+      <h2>七日简谱</h2>
+      <div class="score-subhead">从哥本哈根出发，回到哥本哈根。十一天，六夜船宿。</div>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="cph-strip fade-in fade-in-delay-1">Day 1–2 · 哥本哈根 · 落地休整</div>
+
+    <div class="day-ribbon">
+      <div class="day-row fade-in fade-in-delay-1">
+        <div class="day-label">DAY 03<span class="date">10.03</span></div>
+        <div class="day-body">
+          <div class="place">登船 · Qoornoq 无人村</div>
+          <div class="desc">启航北极冰海，船长欢迎晚宴，停泊 Qoornoq 附近。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-2">
+        <div class="day-label">DAY 04<span class="date">10.04</span></div>
+        <div class="day-body">
+          <div class="place">Qoornoq · 冰峡湾</div>
+          <div class="desc">无人村徒步查访遗迹，下午航入冰峡湾，甲板 BBQ，抵峡湾尽头冰川。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-2">
+        <div class="day-label">DAY 05<span class="date">10.05</span></div>
+        <div class="day-body">
+          <div class="place">Sulussugutip 峡湾</div>
+          <div class="desc">因纽特野外射击课程，追寻北极野兔与驯鹿踪影，锚泊晚餐。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-3">
+        <div class="day-label">DAY 06<span class="date">10.06</span></div>
+        <div class="day-body">
+          <div class="place">Qooqqut 峡湾</div>
+          <div class="desc">著名徒步路线，海面手钓，隐秘峡湾餐厅用当日渔获烹饪晚餐。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-3">
+        <div class="day-label">DAY 07<span class="date">10.07</span></div>
+        <div class="day-body">
+          <div class="place">返航努克</div>
+          <div class="desc">峡湾中返港，码头告别午餐，入住努克酒店。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-3">
+        <div class="day-label">DAY 08<span class="date">10.08</span></div>
+        <div class="day-body">
+          <div class="place">努克市内</div>
+          <div class="desc">努克艺术博物馆、国家档案馆、中央图书馆、海边栈道、渔夫与猎人市场。</div>
+        </div>
+      </div>
+      <div class="day-row fade-in fade-in-delay-3">
+        <div class="day-label">DAY 09<span class="date">10.09</span></div>
+        <div class="day-body">
+          <div class="place">飞返哥本哈根</div>
+          <div class="desc">GL782 · 努克 GOH → 哥本哈根 CPH，入住 Clarion。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cph-strip bottom fade-in fade-in-delay-3">Day 10–11 · 哥本哈根 · 回国 · CA878</div>
+
+    <div class="score-note">* 示意日程 · 以实际出发为准</div>
   </div>
 </section>
 
