@@ -829,90 +829,95 @@ h3 {
   margin-top: 20px;
 }
 
-/* ===== SECTION 09 · CONTACT ===== */
-.contact-section { padding: 100px 0 60px; }
-.contact-section h2 { color: var(--text-dark); }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 44px;
-  margin-top: 36px;
+/* ===== SECTION 09 · OUR TEAM ===== */
+.team-section { padding: 100px 0 60px; background: var(--indigo); color: var(--text-light); }
+.team-section h2 { color: #fff; }
+.team-section .section-number { color: var(--amber-light); opacity: .75; }
+.team-intro-image {
+  width: 100%;
+  margin: 24px 0 20px;
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
 }
-@media (min-width: 640px) {
-  .contact-grid { grid-template-columns: 1.3fr 1fr; gap: 48px; }
+.team-intro {
+  font-size: 1rem;
+  line-height: 2.0;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-top: 20px;
 }
-.guide-card .guide-name {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.3rem;
+.team-intro .lead {
+  color: var(--amber-light);
   font-weight: 400;
-  color: var(--text-dark);
-  margin-bottom: 2px;
+  margin-bottom: 14px;
 }
-.guide-card .guide-role {
+.team-intro p {
+  margin-bottom: 12px;
+}
+.team-subhead {
+  font-family: 'Noto Sans SC', 'OPPOSans', sans-serif;
+  color: var(--amber-light);
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin: 40px 0 4px;
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 12px;
+}
+.tag {
+  font-size: .82rem;
+  padding: 6px 16px;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 20px;
+  letter-spacing: .08em;
+  font-weight: 300;
+  color: var(--text-light);
+}
+.team-ratio {
+  font-size: .82rem;
+  color: rgba(255,255,255,.55);
+  font-weight: 300;
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+.team-member {
+  margin: 30px 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--divider);
+}
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--amber);
+  margin-bottom: 14px;
+}
+.team-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+.team-role {
   font-family: 'Cinzel', serif;
   font-size: .72rem;
-  letter-spacing: .25em;
   color: var(--amber);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.guide-card ul {
-  list-style: none;
-  font-size: .9rem;
-  line-height: 1.9;
-  color: var(--text-body);
-  font-weight: 300;
-}
-.guide-card ul li {
-  position: relative;
-  padding-left: 16px;
-  margin-bottom: 6px;
-}
-.guide-card ul li::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 14px;
-  width: 8px; height: 1px;
-  background: var(--amber);
-}
-.contact-card {
-  background: #fff;
-  border: 1px solid rgba(216,154,78,.25);
-  padding: 28px 24px;
-  border-radius: 2px;
-}
-.qr-placeholder {
-  width: 160px;
-  height: 160px;
-  background: repeating-linear-gradient(45deg, #eee 0 6px, #fff 6px 12px);
-  border: 1px solid rgba(0,0,0,.1);
-  margin: 0 auto 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cinzel', serif;
-  font-size: .66rem;
   letter-spacing: .2em;
-  color: var(--text-muted);
-  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
-.contact-email {
-  font-family: 'Cinzel', serif;
-  font-size: .82rem;
-  letter-spacing: .12em;
-  color: var(--text-dark);
-  text-align: center;
-  margin: 10px 0 4px;
-}
-.photo-credit {
-  font-family: 'Noto Serif SC', serif;
+.team-bio {
+  font-size: .88rem;
+  line-height: 1.95;
   font-weight: 300;
-  font-style: italic;
-  font-size: .78rem;
-  color: var(--text-muted);
-  text-align: center;
-  margin-top: 18px;
-  line-height: 1.7;
+  color: rgba(229,236,242,.82);
 }
 .inclusion-strip {
   display: grid;
@@ -937,7 +942,7 @@ h3 {
   list-style: none;
   font-size: .88rem;
   line-height: 1.9;
-  color: var(--text-body);
+  color: rgba(229,236,242,.82);
   font-weight: 300;
 }
 .inclusion-col li {
@@ -955,16 +960,16 @@ h3 {
   text-align: center;
   font-family: 'Noto Serif SC', serif;
   font-size: 1rem;
-  color: var(--slate);
+  color: var(--lilac);
   letter-spacing: .08em;
 }
 .outbound-link a {
-  color: var(--slate);
+  color: var(--lilac);
   border-bottom: 1px solid var(--amber);
   padding-bottom: 4px;
   transition: color .3s;
 }
-.outbound-link a:hover { color: var(--rust); }
+.outbound-link a:hover { color: var(--amber-light); }
 
 /* ===== FOOTER ===== */
 .footer {
@@ -1068,7 +1073,7 @@ h3 {
         <p>楼下的咖啡店开门，店主是位戴着渔夫帽的姑娘，她笑着说，今晚的天气预报是晴。</p>
         <p>登船前，我先看见了那对红色的"囍"字 —— 它被贴在客舱的窗边，像是谁早就料到了我们要来。</p>
       </div>
-      <div class="diary-author">鲸湾探索 · 姚雪霏 · 极地向导</div>
+      <div class="diary-author">鲸湾探索联合创始人 · 极地向导</div>
     </div>
     <img src="assets/web/IMG_20250928_065642.jpg"
          class="image-rounded fade-in fade-in-delay-2"
@@ -1094,7 +1099,7 @@ h3 {
     </div>
     <div class="aurora-quote fade-in fade-in-delay-3">
       「今年是极光大年，追光成功概率极高。」
-      <span class="aurora-quote-attr">— 姚雪霏 · 极地向导</span>
+      <span class="aurora-quote-attr">— 鲸湾探索 · 极地向导</span>
     </div>
   </div>
 </section>
@@ -1345,37 +1350,62 @@ h3 {
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 09 · 鲸湾 · CONTACT -->
+<!-- SECTION 09 · 我们的团队 — OUR TEAM -->
 <!-- ============================================ -->
-<section class="section content-section contact-section" data-section="9">
+<section class="section dark-section team-section" data-section="9">
   <div class="section-inner">
     <div class="fade-in">
-      <div class="section-number">08</div>
-      <div class="en-eyebrow">Travel With Us</div>
-      <h2>与我们同行</h2>
+      <div class="section-number-light">08</div>
+      <div class="en-eyebrow">Our Team</div>
+      <h2>我们的团队</h2>
       <div class="gold-line"></div>
     </div>
 
-    <div class="contact-grid">
-      <div class="guide-card fade-in fade-in-delay-1">
-        <div class="guide-name">姚雪霏 · Yao Xuefei</div>
-        <div class="guide-role">探险向导 · 野生动物学者</div>
-        <ul>
-          <li>牛津大学动物生态学博士，研究喜马拉雅雪豹与高寒生态系统。</li>
-          <li>2010 年起参与南北极探险，担任野生动物向导、冲锋舟驾驶员、急救与救援人员。</li>
-          <li>科考地区：藏北、珠峰、帕米尔、昆仑山、祁连山、阿尔金山。</li>
-        </ul>
+    <img src="assets/web/page20_img1.jpg" class="team-intro-image fade-in fade-in-delay-1" alt="帆船在冰川峡湾" loading="lazy">
+
+    <div class="team-intro fade-in fade-in-delay-1">
+      <p class="lead">我们不做"服务"，只做"共历"</p>
+      <p>我们的船长熟悉每一道峡湾的暗流，向导能识别某只座头鲸和她的幼崽。外籍帆船厨师深谙当地的极地风味，专属的中餐主厨更懂得熨帖你的中国胃。</p>
+      <p>我们的所有航行都严格遵循丹麦海事安全规范，冲锋舟、救生装备、户外系统一应俱全。</p>
+      <p>但最坚固的保障，是团队十几年极地经验沉淀出的直觉——何时该前进，何时该等待，何时该关掉引擎，让风说话。</p>
+      <p>我们深知，帆船已是北极最温柔的抵达方式，因此更以敬畏之心，积极与当地社区合作，不留痕迹，只留故事。</p>
+    </div>
+
+    <div class="fade-in fade-in-delay-2">
+      <div class="team-subhead">团队组成</div>
+      <div class="gold-line"></div>
+      <div class="tag-list">
+        <span class="tag">当地船务组</span>
+        <span class="tag">国际化中文探险团队</span>
+        <span class="tag">中外双主厨</span>
       </div>
-      <div class="contact-card fade-in fade-in-delay-2">
-        <div class="qr-placeholder">WECHAT QR<br>(TODO)</div>
-        <div class="contact-email">whalebayexpedition@gmail.com</div>
-        <div class="photo-credit">
-          本页照片全部为我们自己所摄，<br>大部分出自一部手机。
-        </div>
+      <p class="team-ratio">接近 1:1 的人员配比，只为 8–12 位旅人安静护航</p>
+    </div>
+
+    <div class="fade-in fade-in-delay-2">
+      <div class="team-subhead">核心成员</div>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="team-member fade-in fade-in-delay-2">
+      <img src="assets/web/page21_img6.jpg" class="team-avatar" alt="姚雪霏" loading="lazy">
+      <div class="team-name">姚雪霏</div>
+      <div class="team-role">牛津大学动物生态学博士</div>
+      <div class="team-bio">
+        <p>二十余年野外科研足迹遍及青藏高原、帕米尔与北极圈。曾五十余次深入南极、常驻北极三年，持冲锋舟驾驶与急救资质。译著包括《植物大发现》《荒野守望》《寂静的石头》《聆听冰川》等。Whalebay Expeditions 联合创始人。</p>
       </div>
     </div>
 
-    <div class="inclusion-strip fade-in fade-in-delay-2">
+    <div class="team-member fade-in fade-in-delay-3">
+      <img src="assets/web/page21_img5.jpg" class="team-avatar" alt="王海宁" loading="lazy">
+      <div class="team-name">王海宁</div>
+      <div class="team-role">中国南极中山站越冬队员</div>
+      <div class="team-bio">
+        <p>2004 至 2006 年驻守南极中山站，从事极光观测、冰芯钻取与野外搜救，获国家海洋局"优秀南极考察队员"。2016 年起专注极地探险，足迹遍及南北极点、格陵兰与斯瓦尔巴。中国极地向导联盟（CPGA）发起人，Whalebay Expeditions 联合创始人。</p>
+      </div>
+    </div>
+
+    <div class="inclusion-strip fade-in fade-in-delay-3">
       <div class="inclusion-col">
         <h4>行程包含 · INCLUDED</h4>
         <ul>
