@@ -551,6 +551,53 @@ h3 {
   color: rgba(255,255,255,.55);
   text-transform: uppercase;
 }
+
+/* ===== SECTION 04 · GOLDEN TUNDRA ===== */
+.tundra-section { padding: 100px 0; }
+.tundra-section h2 { color: var(--text-dark); }
+.tundra-section .body-text { color: var(--text-body); }
+.tundra-image {
+  width: 100vw;
+  max-width: none;
+  margin: 40px -28px 40px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.tundra-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 36px;
+}
+@media (min-width: 640px) {
+  .tundra-strip { grid-template-columns: repeat(3, 1fr); }
+}
+.tundra-card {
+  display: flex;
+  flex-direction: column;
+}
+.tundra-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.tundra-card h4 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
+  font-size: .95rem;
+  letter-spacing: .12em;
+  color: var(--amber);
+  margin: 14px 0 4px;
+}
+.tundra-card p {
+  font-size: .88rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-body);
+  opacity: .85;
+}
 </style>
 </head>
 <body>
@@ -652,6 +699,46 @@ h3 {
     <div class="aurora-quote fade-in fade-in-delay-3">
       「今年是极光大年，追光成功概率极高。」
       <span class="aurora-quote-attr">— 姚雪霏 · 极地向导</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 04 · 金色苔原 — GOLDEN TUNDRA -->
+<!-- ============================================ -->
+<section class="section content-section tundra-section" data-section="4">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">03</div>
+      <div class="en-eyebrow">Golden Tundra</div>
+      <h2>金色苔原</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="body-text body-text-serif fade-in fade-in-delay-1">
+      <p>九月末，纳努克峡湾两岸的苔原由绿变金。</p>
+      <p>蓝莓、岩高兰、鹿蹄草爬满低地；风一吹，驯鹿的踪影在山脊上若隐若现。</p>
+      <p>白昼仍有十来个小时：徒步高处看峡湾，或在船边静静手钓，等极光归来。</p>
+    </div>
+    <img src="assets/web/IMG_20251002_174204.jpg"
+         class="tundra-image fade-in fade-in-delay-2"
+         alt="峡湾边的木秋千与金色苔原"
+         loading="lazy">
+    <div class="tundra-strip fade-in fade-in-delay-3">
+      <div class="tundra-card">
+        <img src="assets/web/IMG_20251002_174204.jpg" alt="tundra hike" loading="lazy">
+        <h4>徒步 · HIKE</h4>
+        <p>苔原高处俯瞰峡湾，驯鹿与北极狐的足迹。</p>
+      </div>
+      <div class="tundra-card">
+        <img src="assets/web/IMG_20250929_192837.jpg" alt="harbor fishing" loading="lazy">
+        <h4>手钓 · LINE</h4>
+        <p>船边静水上的北极鳕与比目鱼，片刻回到童年。</p>
+      </div>
+      <div class="tundra-card">
+        <img src="assets/web/IMG_20251005_111712.jpg" alt="icefjord BBQ" loading="lazy">
+        <h4>冰峡湾 BBQ · GRILL</h4>
+        <p>甲板烤炉，船长的肉饼，冰山从船舷缓缓飘过。</p>
+      </div>
     </div>
   </div>
 </section>
