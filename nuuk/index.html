@@ -1422,7 +1422,7 @@ h3 {
 
 <!-- ===== JAVASCRIPT ===== -->
 <script>
-// Loading screen hider
+// ===== Loading screen hider =====
 window.addEventListener('load', function() {
   setTimeout(function() {
     document.getElementById('loadingScreen').classList.add('hidden');
@@ -1433,6 +1433,58 @@ setTimeout(function() {
   var el = document.getElementById('loadingScreen');
   if (el) el.classList.add('hidden');
 }, 3000);
+
+// ===== IntersectionObserver for .fade-in =====
+(function() {
+  if (!('IntersectionObserver' in window)) {
+    // Fallback: reveal everything immediately
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      el.classList.add('visible');
+    });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+  document.querySelectorAll('.fade-in').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+
+// ===== Family image scale-in (section 05) =====
+(function() {
+  var img = document.querySelector('.family-image');
+  if (!img || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        img.classList.add('visible');
+        io.unobserve(img);
+      }
+    });
+  }, { threshold: 0.3 });
+  io.observe(img);
+})();
+
+// ===== Pause aurora shimmer when off-screen =====
+(function() {
+  var shimmer = document.querySelector('.aurora-shimmer');
+  if (!shimmer || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      shimmer.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+    });
+  }, { threshold: 0 });
+  io.observe(shimmer.parentElement);
+})();
 </script>
 
 </body>
