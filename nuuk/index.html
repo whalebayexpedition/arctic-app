@@ -11,13 +11,13 @@
 <!-- Share Card -->
 <meta property="og:title" content="北极追光 · 格陵兰努克峡湾">
 <meta property="og:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
-<meta property="og:image" content="assets/web/Aurora.jpg">
+<meta property="og:image" content="assets/web/hero.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://arctic.whalebay.world/nuuk">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="北极追光 · 格陵兰努克峡湾">
 <meta name="twitter:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
-<meta name="twitter:image" content="assets/web/Aurora.jpg">
+<meta name="twitter:image" content="assets/web/hero.jpg">
 
 <!-- Google Fonts: Noto Serif SC (display), Noto Sans SC (secondary), Cinzel (english) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -296,8 +296,11 @@ h3 {
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('assets/web/Aurora.jpg') center center / cover no-repeat;
-  filter: brightness(.55) saturate(1.1);
+  background: url('assets/web/hero.jpg') 72% center / cover no-repeat;
+  filter: brightness(.62) saturate(1.08);
+}
+@media (min-width: 780px) {
+  .hero-bg { background-position: center center; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
