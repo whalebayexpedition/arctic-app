@@ -919,44 +919,10 @@ h3 {
   font-weight: 300;
   color: rgba(229,236,242,.82);
 }
-.inclusion-strip {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
+.outbound-link {
   margin-top: 56px;
   padding-top: 44px;
   border-top: 1px solid var(--divider);
-}
-@media (min-width: 640px) {
-  .inclusion-strip { grid-template-columns: 1fr 1fr; gap: 36px; }
-}
-.inclusion-col h4 {
-  font-family: 'Cinzel', serif;
-  font-size: .72rem;
-  letter-spacing: .25em;
-  color: var(--amber);
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-.inclusion-col ul {
-  list-style: none;
-  font-size: .88rem;
-  line-height: 1.9;
-  color: rgba(229,236,242,.82);
-  font-weight: 300;
-}
-.inclusion-col li {
-  padding: 2px 0 2px 14px;
-  position: relative;
-}
-.inclusion-col li::before {
-  content: '·';
-  position: absolute;
-  left: 0;
-  color: var(--amber);
-}
-.outbound-link {
-  margin-top: 56px;
   text-align: center;
   font-family: 'Noto Serif SC', serif;
   font-size: 1rem;
@@ -1405,30 +1371,7 @@ h3 {
       </div>
     </div>
 
-    <div class="inclusion-strip fade-in fade-in-delay-3">
-      <div class="inclusion-col">
-        <h4>行程包含 · INCLUDED</h4>
-        <ul>
-          <li>哥本哈根 ↔ 格陵兰 航班</li>
-          <li>哥本哈根 机场酒店</li>
-          <li>Tulu 探险船独家使用 (含船员与港口税费)</li>
-          <li>探险向导 2 位</li>
-          <li>格陵兰境内酒店、船宿、餐饮</li>
-          <li>讲座与户外活动</li>
-          <li>境外旅行人身保险 · 延误取消险</li>
-        </ul>
-      </div>
-      <div class="inclusion-col">
-        <h4>行程不含 · NOT INCLUDED</h4>
-        <ul>
-          <li>国内 ↔ 丹麦 航班</li>
-          <li>签证相关费用</li>
-          <li>当地船员小费 (€20/天/人，全程 €160/人)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="outbound-link">
+    <div class="outbound-link fade-in fade-in-delay-3">
       <a href="https://whalebay.world" target="_blank" rel="noopener">夏日峡湾 · 另一面纳努克 →</a>
     </div>
   </div>
