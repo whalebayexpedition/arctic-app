@@ -430,6 +430,47 @@ h3 {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
+
+/* ===== DIARY ENTRY ===== */
+.diary-entry {
+  position: relative;
+  padding: 32px 28px 28px;
+  background: rgba(255,255,255,.025);
+  border-left: 1px solid var(--amber);
+  margin: 32px 0;
+  border-radius: 0 4px 4px 0;
+}
+.diary-date {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .28em;
+  color: var(--amber);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.diary-location {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: .85rem;
+  opacity: .65;
+  margin-bottom: 18px;
+  letter-spacing: .08em;
+}
+.diary-text {
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 1.02rem;
+  line-height: 2.15;
+  font-weight: 300;
+  color: var(--text-light);
+}
+.diary-text p { margin-bottom: 4px; }
+.diary-author {
+  margin-top: 24px;
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  opacity: .45;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
 </style>
 </head>
 <body>
@@ -479,6 +520,37 @@ h3 {
       <span class="line" style="margin-top:14px;display:inline-block;color:var(--lilac)">一年里最短的窗口，最长的追光。</span>
     </div>
     <div class="opening-caption fade-in fade-in-delay-1">* NUUK FJORD · OCTOBER 2025</div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 02 · 航行日记 01 · 在纳努克醒来 -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="2">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">01</div>
+    </div>
+    <div class="diary-entry fade-in fade-in-delay-1">
+      <div class="diary-date">航行日记 ︱ 2025 · 10 · 03</div>
+      <div class="diary-location">纳努克 Nuuk · 清晨的港口</div>
+      <div class="diary-text">
+        <!-- CONTENT-TODO: diary-01 — 150 字 first-person. Beats:
+             apartment-window morning light over Nuuk harbor,
+             Tulu tied below in grey dawn, 囍 charm noted in the
+             guest cabin before boarding, closing line sets up
+             the aurora night. Keep restrained. -->
+        <p>清晨六点，天还没真正亮起。</p>
+        <p>从公寓的三面窗户望出去，码头的灯一盏盏熄掉，Tulu 停在最里侧，黄色的船身在灰蓝色里先一步醒来。</p>
+        <p>楼下的咖啡店开门，店主是位戴着渔夫帽的姑娘，她笑着说，今晚的天气预报是晴。</p>
+        <p>登船前，我先看见了那对红色的"囍"字 —— 它被贴在客舱的窗边，像是谁早就料到了我们要来。</p>
+      </div>
+      <div class="diary-author">鲸湾探索 · 姚雪霏 · 极地向导</div>
+    </div>
+    <img src="assets/web/IMG_20250928_065642.jpg"
+         class="image-rounded fade-in fade-in-delay-2"
+         alt="纳努克港口清晨 · 公寓三窗望海"
+         loading="lazy">
   </div>
 </section>
 
