@@ -828,6 +828,172 @@ h3 {
   letter-spacing: .1em;
   margin-top: 20px;
 }
+
+/* ===== SECTION 09 · CONTACT ===== */
+.contact-section { padding: 100px 0 60px; }
+.contact-section h2 { color: var(--text-dark); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 44px;
+  margin-top: 36px;
+}
+@media (min-width: 640px) {
+  .contact-grid { grid-template-columns: 1.3fr 1fr; gap: 48px; }
+}
+.guide-card .guide-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+.guide-card .guide-role {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .25em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.guide-card ul {
+  list-style: none;
+  font-size: .9rem;
+  line-height: 1.9;
+  color: var(--text-body);
+  font-weight: 300;
+}
+.guide-card ul li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+.guide-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 14px;
+  width: 8px; height: 1px;
+  background: var(--amber);
+}
+.contact-card {
+  background: #fff;
+  border: 1px solid rgba(216,154,78,.25);
+  padding: 28px 24px;
+  border-radius: 2px;
+}
+.qr-placeholder {
+  width: 160px;
+  height: 160px;
+  background: repeating-linear-gradient(45deg, #eee 0 6px, #fff 6px 12px);
+  border: 1px solid rgba(0,0,0,.1);
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: .66rem;
+  letter-spacing: .2em;
+  color: var(--text-muted);
+  text-align: center;
+}
+.contact-email {
+  font-family: 'Cinzel', serif;
+  font-size: .82rem;
+  letter-spacing: .12em;
+  color: var(--text-dark);
+  text-align: center;
+  margin: 10px 0 4px;
+}
+.photo-credit {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: .78rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 18px;
+  line-height: 1.7;
+}
+.inclusion-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-top: 56px;
+  padding-top: 44px;
+  border-top: 1px solid var(--divider);
+}
+@media (min-width: 640px) {
+  .inclusion-strip { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+.inclusion-col h4 {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .25em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.inclusion-col ul {
+  list-style: none;
+  font-size: .88rem;
+  line-height: 1.9;
+  color: var(--text-body);
+  font-weight: 300;
+}
+.inclusion-col li {
+  padding: 2px 0 2px 14px;
+  position: relative;
+}
+.inclusion-col li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--amber);
+}
+.outbound-link {
+  margin-top: 56px;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem;
+  color: var(--slate);
+  letter-spacing: .08em;
+}
+.outbound-link a {
+  color: var(--slate);
+  border-bottom: 1px solid var(--amber);
+  padding-bottom: 4px;
+  transition: color .3s;
+}
+.outbound-link a:hover { color: var(--rust); }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--indigo-deep);
+  color: rgba(255,255,255,.55);
+  padding: 44px 28px;
+  text-align: center;
+}
+.footer p {
+  font-size: .78rem;
+  letter-spacing: .12em;
+  font-weight: 300;
+  margin: 4px 0;
+}
+.footer .brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: .4em;
+  font-size: .8rem;
+  color: var(--amber);
+  margin-bottom: 10px;
+}
+.footer .sibling-links {
+  margin-top: 16px;
+  font-size: .72rem;
+  color: rgba(255,255,255,.35);
+  letter-spacing: .12em;
+}
+.footer .sibling-links a { margin: 0 8px; border-bottom: 1px solid transparent; }
+.footer .sibling-links a:hover { border-bottom-color: var(--amber); color: var(--amber-light); }
 </style>
 </head>
 <body>
@@ -1178,7 +1344,81 @@ h3 {
   </div>
 </section>
 
+<!-- ============================================ -->
+<!-- SECTION 09 · 鲸湾 · CONTACT -->
+<!-- ============================================ -->
+<section class="section content-section contact-section" data-section="9">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">08</div>
+      <div class="en-eyebrow">Travel With Us</div>
+      <h2>与我们同行</h2>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="guide-card fade-in fade-in-delay-1">
+        <div class="guide-name">姚雪霏 · Yao Xuefei</div>
+        <div class="guide-role">探险向导 · 野生动物学者</div>
+        <ul>
+          <li>牛津大学动物生态学博士，研究喜马拉雅雪豹与高寒生态系统。</li>
+          <li>2010 年起参与南北极探险，担任野生动物向导、冲锋舟驾驶员、急救与救援人员。</li>
+          <li>科考地区：藏北、珠峰、帕米尔、昆仑山、祁连山、阿尔金山。</li>
+        </ul>
+      </div>
+      <div class="contact-card fade-in fade-in-delay-2">
+        <div class="qr-placeholder">WECHAT QR<br>(TODO)</div>
+        <div class="contact-email">whalebayexpedition@gmail.com</div>
+        <div class="photo-credit">
+          本页照片全部为我们自己所摄，<br>大部分出自一部手机。
+        </div>
+      </div>
+    </div>
+
+    <div class="inclusion-strip fade-in fade-in-delay-2">
+      <div class="inclusion-col">
+        <h4>行程包含 · INCLUDED</h4>
+        <ul>
+          <li>哥本哈根 ↔ 格陵兰 航班</li>
+          <li>哥本哈根 机场酒店</li>
+          <li>Tulu 探险船独家使用 (含船员与港口税费)</li>
+          <li>探险向导 2 位</li>
+          <li>格陵兰境内酒店、船宿、餐饮</li>
+          <li>讲座与户外活动</li>
+          <li>境外旅行人身保险 · 延误取消险</li>
+        </ul>
+      </div>
+      <div class="inclusion-col">
+        <h4>行程不含 · NOT INCLUDED</h4>
+        <ul>
+          <li>国内 ↔ 丹麦 航班</li>
+          <li>签证相关费用</li>
+          <li>当地船员小费 (€20/天/人，全程 €160/人)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="outbound-link">
+      <a href="https://whalebay.world" target="_blank" rel="noopener">夏日峡湾 · 另一面纳努克 →</a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
+<footer class="footer">
+  <p class="brand">WHALEBAY EXPEDITIONS</p>
+  <p>鲸湾探索 · 北极追光 · 2026</p>
+  <p>© 2026 Whalebay Expeditions. All rights reserved.</p>
+  <div class="sibling-links">
+    <a href="https://whalebay.world">whalebay.world</a> ·
+    <a href="https://arctic.whalebay.world">arctic.whalebay.world</a> ·
+    <a href="https://antarctica.whalebay.world">antarctica.whalebay.world</a>
+  </div>
+</footer>
 
 <!-- ===== JAVASCRIPT ===== -->
 <script>
