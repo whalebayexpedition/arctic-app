@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>北极追光 · 格陵兰纳努克峡湾 | 鲸湾探索</title>
+<meta name="description" content="2026 秋 · 纳努克峡湾追光航季 · 船宿 5 夜 · 8–10 家人密友 · 因纽特家族船只 Tulu">
+
+<!-- Share Card -->
+<meta property="og:title" content="北极追光 · 格陵兰纳努克峡湾">
+<meta property="og:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
+<meta property="og:image" content="assets/web/Aurora.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arctic.whalebay.world/nuuk">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="北极追光 · 格陵兰纳努克峡湾">
+<meta name="twitter:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
+<meta name="twitter:image" content="assets/web/Aurora.jpg">
+
+<!-- Google Fonts: Noto Serif SC (display), Noto Sans SC (secondary), Cinzel (english) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700&family=Noto+Serif+SC:wght@200;300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== OPPO Sans @font-face ===== */
+@font-face{font-family:"OPPOSans";src:url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-L.03bf498.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"OPPOSans";src:url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-R.468eaab.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"OPPOSans";src:url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-M.7116b96.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"OPPOSans";src:url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-B.d74d1bd.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'OPPOSans','Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  color: #2c2c3e;
+  background: #0E1620;
+  line-height: 1.9;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ===== PALETTE ===== */
+:root {
+  --lilac: #E7B6C4;
+  --amber: #D89A4E;
+  --amber-light: #E6B475;
+  --emerald: #6FBF8E;
+  --slate: #4A6A7C;
+  --indigo: #0E1620;
+  --indigo-deep: #070C12;
+  --midnight: #111A26;
+  --rust: #9A4A35;
+  --bone: #F2EBE1;
+  --sand: #D9C8A5;
+  --text-dark: #1a1a2e;
+  --text-body: #2c2c3e;
+  --text-light: #E5ECF2;
+  --text-muted: #7A8A98;
+  --divider: rgba(216, 154, 78, 0.25);
+}
+
+/* ===== LOADING SCREEN ===== */
+.loading-screen {
+  position: fixed; inset: 0;
+  background: var(--indigo);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 9999;
+  transition: opacity .8s ease, visibility .8s ease;
+}
+.loading-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.loading-logo {
+  color: var(--amber);
+  font-family: 'Cinzel', serif;
+  font-size: .72rem;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: .85;
+}
+.loading-bar {
+  width: 120px; height: 1px;
+  background: rgba(216,154,78,.15);
+  position: relative; overflow: hidden;
+}
+.loading-bar::after {
+  content: ''; position: absolute;
+  left: 0; top: 0; bottom: 0; width: 40%;
+  background: var(--amber);
+  animation: loadSlide 1.2s ease-in-out infinite;
+}
+@keyframes loadSlide { 0%{left:-40%} 100%{left:100%} }
+</style>
+</head>
+<body>
+
+<!-- ===== LOADING ===== -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-logo">WHALEBAY · NUUK</div>
+  <div class="loading-bar"></div>
+</div>
+
+<!-- ===== MAIN ===== -->
+<main id="app">
+  <!-- sections will be added in subsequent tasks -->
+</main>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+// Loading screen hider
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('loadingScreen').classList.add('hidden');
+  }, 800);
+});
+// Fallback: hide after 3s max even if load event is slow
+setTimeout(function() {
+  var el = document.getElementById('loadingScreen');
+  if (el) el.classList.add('hidden');
+}, 3000);
+</script>
+
+</body>
+</html>
