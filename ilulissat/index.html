@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>帆向格陵兰 | 鲸湾探索 2026</title>
+<meta name="description" content="2026北极私属航季 · 全船八席 · 限定四期 · 格陵兰帆船远征">
+
+<!-- Share Card (WhatsApp / WeChat / Twitter / Facebook) -->
+<meta property="og:title" content="帆向格陵兰 · 2026北极私属远征">
+<meta property="og:description" content="红帆穿越冰海，全船仅八席。一场留给世界尽头的私属史诗。">
+<meta property="og:image" content="https://arctic.whalebay.world/ilulissat/assets/og-share.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arctic.whalebay.world/ilulissat/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="帆向格陵兰 · 2026北极私属远征">
+<meta name="twitter:description" content="红帆穿越冰海，全船仅八席。一场留给世界尽头的私属史诗。">
+<meta name="twitter:image" content="https://arctic.whalebay.world/ilulissat/assets/og-share.jpeg">
+
+<!-- Fonts: 思源宋体(Noto Serif SC)=手记, Noto Sans SC≈未来荧黑=标题, Cinzel=英文 -->
+<!-- OPPO Sans loaded via @font-face below for body text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700&family=Noto+Serif+SC:wght@200;300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== OPPO Sans @font-face ===== */
+@font-face {
+  font-family: "OPPOSans";
+  src: url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-L.03bf498.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-R.468eaab.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-M.7116b96.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OPPOSans";
+  src: url("https://db.quike.com.cn/_nuxt/fonts/OPPOSans-B.d74d1bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'OPPOSans', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #1a1a2e;
+  background: #0a0a12;
+  line-height: 1.9;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ===== COLOR PALETTE ===== */
+:root {
+  --deep-ocean: #0a0f1a;
+  --midnight: #0d1b2a;
+  --arctic-blue: #1b3a5c;
+  --ice-blue: #a8d4e6;
+  --glacier: #d4eef7;
+  --snow: #f0f6f9;
+  --warm-white: #faf8f5;
+  --cream: #f5f0e8;
+  --gold: #c8a86e;
+  --gold-light: #dfc295;
+  --red-sail: #c0392b;
+  --red-sail-bright: #e74c3c;
+  --text-dark: #1a1a2e;
+  --text-body: #2c2c3e;
+  --text-light: #e8e8ec;
+  --text-muted: #8a8a9a;
+  --divider: rgba(200, 168, 110, 0.3);
+}
+
+/* ===== TYPOGRAPHY ===== */
+/* 英文装饰标题 */
+.font-display {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+/* 中文手记/日记 — 思源宋体 */
+.font-serif {
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+}
+/* 中文标题 — 未来荧黑(fallback Noto Sans SC) */
+.font-heading {
+  font-family: 'Noto Sans SC', 'OPPOSans', 'PingFang SC', sans-serif;
+}
+
+/* ===== LOADING SCREEN ===== */
+.loading-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--deep-ocean);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loading-logo {
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+.loading-bar {
+  width: 120px;
+  height: 1px;
+  background: rgba(200, 168, 110, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.loading-bar::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 40%;
+  background: var(--gold);
+  animation: loadSlide 1.2s ease-in-out infinite;
+}
+@keyframes loadSlide {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+/* ===== NAVIGATION DOT INDICATOR ===== */
+.nav-dots {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.nav-dots.visible { opacity: 1; }
+.nav-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+.nav-dot.active {
+  background: var(--gold);
+  box-shadow: 0 0 6px rgba(200, 168, 110, 0.5);
+  transform: scale(1.3);
+}
+
+/* ===== SECTION BASE ===== */
+.section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.section-inner {
+  padding: 60px 28px;
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('assets/page1_img1.jpeg') center 80% / cover no-repeat;
+  filter: brightness(0.7);
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10,15,26,0.3) 0%,
+    rgba(10,15,26,0.1) 40%,
+    rgba(10,15,26,0.5) 100%
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px 28px;
+}
+.hero-brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.5s forwards;
+}
+.hero-subtitle-en {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.7s forwards;
+}
+.hero-title {
+  font-family: 'Noto Sans SC', 'OPPOSans', 'PingFang SC', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.9s forwards;
+}
+.hero-title-en {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.5em;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 1s ease 1.1s forwards;
+}
+.hero-tagline {
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-light);
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeUp 1s ease 1.3s forwards;
+}
+.hero-year {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.6em;
+  color: rgba(255,255,255,0.35);
+  margin-top: 50px;
+  opacity: 0;
+  animation: fadeUp 1s ease 1.5s forwards;
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  opacity: 0;
+  animation: fadeUp 1s ease 1.8s forwards;
+}
+.hero-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  margin: 0 auto;
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; height: 40px; }
+  50% { opacity: 0.8; height: 50px; }
+}
+
+/* ===== FULL BLEED IMAGE SECTIONS ===== */
+.full-image-section {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: white;
+}
+.full-image-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.full-image-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.full-image-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 28px;
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content-section {
+  background: var(--warm-white);
+  color: var(--text-body);
+}
+.dark-section {
+  background: var(--deep-ocean);
+  color: var(--text-light);
+}
+.midnight-section {
+  background: var(--midnight);
+  color: var(--text-light);
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.gold-line {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px 0;
+}
+.gold-line-center {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px auto;
+}
+.section-number {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+.section-number-light {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.4em;
+  color: var(--gold-light);
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  font-family: 'Noto Sans SC', 'OPPOSans', 'PingFang SC', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+h3 {
+  font-family: 'Noto Sans SC', 'OPPOSans', 'PingFang SC', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.en-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+.en-subtitle-gold {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* ===== BODY TEXT ===== */
+.body-text {
+  font-size: 1.05rem;
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+.body-text-large {
+  font-size: 1.15rem;
+  line-height: 2.1;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+.caption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+.caption-light {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+
+/* ===== IMAGE COMPONENTS ===== */
+.image-full {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 2px;
+}
+.image-rounded {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+.image-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+.image-grid-2 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.image-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 24px 0;
+}
+.image-grid-3 .grid-span {
+  grid-column: 1 / -1;
+}
+.image-grid-3 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ===== DIARY ENTRY ===== */
+.diary-entry {
+  position: relative;
+  padding: 30px 24px;
+  background: rgba(255,255,255,0.03);
+  border-left: 1px solid var(--gold);
+  margin: 30px 0;
+  border-radius: 0 4px 4px 0;
+}
+.diary-entry-light {
+  position: relative;
+  padding: 30px 24px;
+  background: rgba(0,0,0,0.02);
+  border-left: 1px solid var(--gold);
+  margin: 30px 0;
+  border-radius: 0 4px 4px 0;
+}
+.diary-date {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.diary-location {
+  font-size: 0.88rem;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+.diary-text {
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  font-size: 1.02rem;
+  line-height: 2.1;
+  font-weight: 300;
+  font-style: normal;
+}
+.diary-author {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+}
+
+/* ===== TABLE ===== */
+.specs-table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+}
+.specs-table tr {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.specs-table td {
+  padding: 12px 0;
+  font-size: 0.92rem;
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.specs-table td:first-child {
+  color: var(--gold);
+  width: 80px;
+  letter-spacing: 0.08em;
+  font-size: 0.88rem;
+}
+.specs-table td:nth-child(2) {
+  padding-left: 12px;
+}
+.specs-table td:nth-child(3) {
+  padding-left: 12px;
+  opacity: 0.5;
+  font-size: 0.82rem;
+}
+
+/* light version of table */
+.specs-table-light {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+}
+.specs-table-light tr {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.specs-table-light td {
+  padding: 12px 0;
+  font-size: 0.85rem;
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.specs-table-light td:first-child {
+  color: var(--gold);
+  width: 80px;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+/* ===== ITINERARY ===== */
+.itinerary-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--divider);
+}
+.itinerary-day {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.itinerary-title {
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.itinerary-desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.7;
+  font-weight: 300;
+}
+.itinerary-tags {
+  font-size: 0.85rem;
+  color: var(--gold);
+  margin-top: 8px;
+  letter-spacing: 0.1em;
+}
+
+/* ===== TEAM MEMBER ===== */
+.team-member {
+  margin: 30px 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--divider);
+}
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  margin-bottom: 12px;
+}
+.team-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.team-role {
+  font-size: 0.88rem;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.team-bio {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.team-bio li {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 6px;
+}
+.team-bio li::before {
+  content: '·';
+  margin-right: 8px;
+  color: var(--gold);
+}
+
+/* ===== CTA / CONTACT ===== */
+.cta-section {
+  text-align: center;
+  padding: 80px 28px;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-delay-1 { transition-delay: 0.15s; }
+.fade-in-delay-2 { transition-delay: 0.3s; }
+.fade-in-delay-3 { transition-delay: 0.45s; }
+
+/* ===== KEYFRAMES ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== PARALLAX IMAGE STRIP ===== */
+.parallax-strip {
+  height: 50vh;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.parallax-strip-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, var(--deep-ocean) 0%, transparent 30%, transparent 70%, var(--deep-ocean) 100%);
+}
+
+/* ===== HIGHLIGHT / QUOTE ===== */
+.quote-block {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  padding: 20px 0;
+  border-top: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* ===== TAG LIST ===== */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.tag {
+  font-size: 0.88rem;
+  padding: 6px 16px;
+  border: 1px solid var(--divider);
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+}
+
+/* ===== MAP SECTION ===== */
+.map-locations {
+  margin: 24px 0;
+}
+.map-location {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+.map-location-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.map-location-name {
+  letter-spacing: 0.08em;
+}
+.map-location-en {
+  opacity: 0.4;
+  font-size: 0.82rem;
+  font-family: 'Cinzel', serif;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 28px;
+  text-align: center;
+  background: var(--deep-ocean);
+  color: rgba(255,255,255,0.3);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+  .section-inner, .full-image-content {
+    max-width: 640px;
+  }
+  h2 { font-size: 1.9rem; }
+  .body-text { font-size: 1.05rem; }
+  .hero-title { font-size: 2.8rem; }
+}
+
+/* ===== WECHAT COMPAT ===== */
+@supports (-webkit-overflow-scrolling: touch) {
+  body { -webkit-overflow-scrolling: touch; }
+}
+</style>
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-logo">WHALEBAY EXPEDITIONS</div>
+  <div class="loading-bar"></div>
+</div>
+
+<!-- NAVIGATION DOTS -->
+<nav class="nav-dots" id="navDots"></nav>
+
+<!-- ============================================ -->
+<!-- SECTION 1: HERO — COVER -->
+<!-- ============================================ -->
+<section class="hero section" data-section="0">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-brand">鲸湾探索</div>
+    <div class="hero-subtitle-en">Whalebay Expeditions</div>
+    <h1 class="hero-title">帆向格陵兰</h1>
+    <div class="hero-title-en font-display">Sailing Greenland</div>
+    <div class="hero-tagline">全船八席 · 限定四期</div>
+    <div class="hero-year font-display">ARCTIC · 2026</div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 2: AERIAL NIGHT ICE -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="1">
+  <div class="full-image-bg" style="background-image: url('assets/page2_img1.jpeg');"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.4) 0%, rgba(10,15,26,0.2) 40%, rgba(10,15,26,0.7) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:80px;"></div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 3: DIARY ENTRY — DISCO BAY -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="2">
+  <div class="section-inner">
+    <div class="quote-block fade-in">
+      真正的探险，<br>从不按计划发生。<br><span style="display:block;text-align:right;">—— 唯有风知道航路</span>
+    </div>
+    <div class="fade-in">
+      <div class="section-number-light">01</div>
+    </div>
+    <div class="diary-entry fade-in fade-in-delay-1">
+      <div class="diary-date">航海日记 ︱2024-7-12</div>
+      <div class="diary-location">迪斯科湾 夜</div>
+      <div class="diary-text">
+        <p>艾奇冰川（Eqi）历来繁忙。</p>
+        <p>其实它边上那些小峡湾，也有冰川，<br>只是少有人至罢了。</p>
+        <p>比如面前这个南冰川*，我觉得也挺美的，完全不输。</p>
+        <br>
+        <p>睡了。</p>
+        <p>半夜，船轻轻地晃啊晃。迷迷糊糊的，像是梦。</p>
+        <p>职业警觉，还是起了身<br>——水平如镜，无风无浪。</p>
+        <p>"果然是梦。"</p>
+        <p>这峡湾窄得可以游上岸，哪会有什么晃呢？</p>
+        <p>正想着，船晃了起来<br><br>——原来是冰川在崩裂。</p>
+        <br>
+        <p>原来冰崩不总是白日喧闹里哗啦啦的一大片。</p>
+        <p>有时，它悄然发生，<br>只留给夜泊者一人听见。</p>
+        <p>月牙儿碎在海面，仿佛狡黠地眨了眼。</p>
+      </div>
+      <p class="fade-in caption-light" style="text-align:center;">* 格陵兰语: Sermeq Kujalleq</p>
+      <div class="diary-author">鲸湾探索 · 极地向导</div>
+    </div>
+    <img src="assets/red_sail_night.png" class="image-rounded fade-in fade-in-delay-2" alt="夜泊冰川">
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 4: WHY GREENLAND -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="3">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">02</div>
+      <h2>扬帆格陵兰</h2>
+      <div class="en-subtitle">Why Sailing in Greenland?</div>
+    </div>
+    <img src="assets/page4_img1.jpeg" class="image-rounded fade-in" alt="冰川山脉">
+    <div class="body-text fade-in fade-in-delay-1">
+      <p>当世界越来越容易抵达，<br>纯粹的荒野反而成了最奢侈的礼物。</p>
+      <br>
+      <p>这不是一次巡航。<br>这是一场独家订制的家族远征，<br>一曲挚友共赴的静默史诗。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 5: WHY SAILBOAT -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="4">
+  <div class="full-image-bg" style="background-image: url('assets/page5_img1.jpeg');"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.2) 0%, rgba(10,15,26,0.6) 50%, rgba(10,15,26,0.85) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
+    <div class="fade-in">
+      <h3 style="color: var(--gold-light);">为什么要乘帆船航行?</h3>
+      <div class="gold-line"></div>
+    </div>
+    <div class="body-text fade-in fade-in-delay-1" style="color: var(--text-light);">
+      <p style="font-weight:400;">因为有些地方，拒绝被"参观"。</p>
+      <br>
+      <p>百人游轮只能远观冰川的轮廓，我们的帆船，吃水刚过三米，可悄然滑入冰山环抱的秘境港湾——那里没有码头，没有游客，只有浮冰轻叩船身的清响和午夜阳光下整片峡湾的寂静。</p>
+      <br>
+      <p>在帆船上，行程不由日历决定，而由风向、冰情与好奇心书写。今日或许追踪座头鲸的踪迹；明天可能登临无名小岛，在因纽特猎人曾驻足的岩壁下野餐。</p>
+    </div>
+    <p class="caption-light fade-in fade-in-delay-2">帆船在浮冰中前进</p>
+  </div>
+</section>
+
+<!-- VISUAL BREAK: AERIAL SHIP IN ICE -->
+<div class="parallax-strip" style="background-image: url('assets/iceberg_reflection.jpg');">
+  <div class="parallax-strip-overlay"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 6: OUR SHIP -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="5">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">03</div>
+      <h2>我们的船</h2>
+      <div class="en-subtitle" style="color: rgba(255,255,255,0.35);">Why Sail With Us?</div>
+    </div>
+    <div class="body-text fade-in fade-in-delay-1" style="color: var(--text-light);">
+      <p>她出生在德国海滨的造船厂，钢壳厚实，专为高纬度风暴与浮冰而造。</p>
+      <br>
+      <p>2013 年，她更名为"风之爱"，转型为人道主义医疗船，在巴布亚新几内亚的离岛，让数千例白内障岛民重见了世界。</p>
+      <br>
+      <p>为了深入浅水珊瑚礁区，她刻意保持轻盈吃水；为了支撑偏远地区的巡诊，她拥有超常的淡水与电力冗余。这些为"救助"而生的设计，如今成了"探索"的最大优势。</p>
+      <br>
+      <p>2022 年，她告别医疗使命，白帆换红，北上格陵兰。那双曾运送光明的钢骨，如今载着旅人，驶入峡湾深处的寂静。</p>
+      <br>
+      <p>她不是新船，但正因走过风暴、承载过生命，才懂得如何温柔地陪伴一段私属远征。</p>
+    </div>
+
+    <table class="specs-table fade-in fade-in-delay-2">
+      <tr><td>建造地</td><td>德国</td><td>钢制远洋船</td></tr>
+      <tr><td>船体材质</td><td>加厚钢板</td><td>可抗小型浮冰撞击</td></tr>
+      <tr><td>总吨位</td><td>168 GT</td><td>国际极地航行安全标准</td></tr>
+      <tr><td>排水量</td><td>约220 吨</td><td>海上稳定的移动堡垒</td></tr>
+      <tr><td>吃水深度</td><td>3.5 米</td><td>可航行于峡湾与河口</td></tr>
+      <tr><td>帆装类型</td><td>双桅纵帆</td><td>侧风效率高，极地操控灵活</td></tr>
+      <tr><td>认证</td><td colspan="2">北极航行资质 + 国际海事安全证书</td></tr>
+      <tr><td>系统</td><td colspan="2">强大的淡水生成 + 电力冗余系统<br>支持长时间无补给航行</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 7: SHIP FULL IMAGE -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="6">
+  <div class="full-image-bg" style="background-image: url('assets/page7_img1.jpeg');"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.1) 50%, rgba(10,15,26,0.5) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:80px;">
+    <h2 class="fade-in" style="text-align:center; color:white; font-weight:200; letter-spacing:0.15em;">风之爱</h2>
+    <p class="fade-in fade-in-delay-1 caption-light" style="text-align:center;">一艘被风与爱淬炼过的船</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 8: GREENLAND MOMENTS — MIDNIGHT SUN -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="7">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">04</div>
+      <h2>格陵兰时刻</h2>
+      <div class="en-subtitle">Some Moments in Greenland</div>
+    </div>
+    <img src="assets/page8_img1.jpeg" class="image-rounded fade-in" alt="午夜阳光">
+    <div class="fade-in">
+      <h3 style="margin-top:30px;">午夜阳光</h3>
+      <div class="gold-line"></div>
+      <div class="body-text">
+        <p>5 月下旬至8 月，格陵兰高纬度地区将没有黑夜。太阳贴着地平线滑行，仿佛拥有一个无尽的黄昏。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 9: ICE WONDERS -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="8">
+  <div class="full-image-bg" style="background-image: url('assets/page9_img3.jpeg');"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.5) 0%, rgba(10,15,26,0.2) 40%, rgba(10,15,26,0.8) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
+    <div class="fade-in">
+      <h3 style="color: var(--gold-light);">冰海奇景</h3>
+      <div class="gold-line"></div>
+    </div>
+    <div class="body-text fade-in fade-in-delay-1" style="color: var(--text-light);">
+      <p>每一座冰山都独一无二，每一刻也都在消融。</p>
+    </div>
+    <div class="fade-in fade-in-delay-2" style="margin-top:30px;">
+      <h3 style="color: var(--gold-light);">冰川崩解</h3>
+      <div class="gold-line"></div>
+      <div class="body-text" style="color: var(--text-light);">
+        <p>伊卢利萨特冰川，每日入海四十米。这不是毁灭，而是循环；是地球写给海洋的，一封永不停歇的信。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 10: WHALES -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="9">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h3>鲸群巡游</h3>
+      <div class="gold-line"></div>
+    </div>
+    <div class="body-text fade-in">
+      <p>七月的迪斯科湾，是鲸的夏宫。</p>
+      <p>座头鲸喷出斜斜的气柱，露脊鲸顶着白色瘤冠浮出水面，抹香鲸沉潜前，尾鳍高高扬起，如一声响亮地告别。</p>
+    </div>
+    <div class="image-grid-2 fade-in fade-in-delay-1">
+      <img src="assets/page10_img2.jpeg" alt="航拍座头鲸">
+      <img src="assets/page10_img3.jpeg" alt="鲸鱼露出背鳍">
+    </div>
+    <img src="assets/page10_img1.jpeg" class="image-rounded fade-in" alt="虎鲸">
+    <p class="caption fade-in">如果运气爆棚，甚至有机会遇到虎鲸</p>
+
+    <img src="assets/page11_img1.jpeg" class="image-rounded fade-in" alt="鲸鱼的呼吸" style="margin-top:30px;">
+
+    <div class="diary-entry-light fade-in">
+      <div class="diary-date">航海日记 ︱2016-7-25</div>
+      <div class="diary-location">阿塔湾 晴</div>
+      <div class="diary-text" style="color: var(--text-body);">
+        <p>观鲸，是一门需要学习的课程。</p>
+        <br>
+        <p>你看到它喷出的汽柱，听到巨大的呼吸声，然后是寂静，仿佛失去了。</p>
+        <p>你等，一分钟、两分钟、三分钟……</p>
+        <p>在浩瀚无垠的海面，追寻波浪和鸟群的蛛丝马迹，全心全意地守候下一次相遇的可能。</p>
+        <br>
+        <p>然后又是巨大的一声呼吸。你的心脏也随之一跳。</p>
+        <p>然后又是寂静。又是等……</p>
+        <br>
+        <p>然后你慢慢习惯这个节奏。然后你开始看出它在睡觉、在巡游、在捕食、在你周围欢快地玩耍起来。</p>
+        <br>
+        <p>这便是两个不同物种，相识的伊始。</p>
+      </div>
+      <div class="diary-author" style="color: var(--text-body);">鲸湾探索 · 极地向导</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 11: INUIT VILLAGE & TUNDRA -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="10">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h3 style="color: var(--gold-light);">因纽特村落</h3>
+      <div class="gold-line"></div>
+    </div>
+    <div class="body-text fade-in" style="color: var(--text-light);">
+      <p>在世界强权的喧嚣之外，仍有人守着自己的日子，遵循着传承千年、贴近自然的生存智慧。</p>
+    </div>
+    <img src="assets/page12_img3.jpeg" class="image-rounded fade-in" alt="因纽特村落">
+    <div class="image-grid-2 fade-in">
+      <div>
+        <img src="assets/page12_img2.jpeg" alt="当地的年轻人" style="height:160px;object-fit:cover;border-radius:4px;">
+        <p class="caption-light">当地的年轻人</p>
+      </div>
+      <div>
+        <img src="assets/page12_img1.jpeg" alt="制作格陵兰美食" style="height:160px;object-fit:cover;border-radius:4px;">
+        <p class="caption-light">制作格陵兰美食</p>
+      </div>
+    </div>
+
+    <div class="fade-in" style="margin-top:40px;">
+      <h3 style="color: var(--gold-light);">苔原的生灵</h3>
+      <div class="gold-line"></div>
+      <div class="body-text" style="color: var(--text-light);">
+        <p>七月，苔原迎来短暂盛放。北极罂粟、紫虎耳草、羊胡子草……在融雪浸润的土地上，悄然铺展。</p>
+      </div>
+    </div>
+    <img src="assets/page13_img1.jpeg" class="image-rounded fade-in" alt="岩高兰果实">
+    <div class="fade-in" style="margin-top:20px;">
+      <h3 style="color: var(--gold-light);">浆果的滋味</h3>
+      <div class="body-text" style="color: var(--text-light);">
+        <p>岩高兰果实的滋味，是兑了三分之一水的青苹果。在冰川、鲸群、荒野之外，我们想用一颗微酸的浆果，让你相信：<span style="color: var(--gold-light);">"格陵兰，是可以用五感活着的地方。"</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 12: WHO IS THIS FOR -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="11">
+  <div class="full-image-bg" style="background-image: url('assets/page14_img1.jpeg');"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.15) 40%, rgba(10,15,26,0.7) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
+    <div class="fade-in" style="text-align:center;">
+      <h2 style="color:white; font-weight:200;">这，是否是您<br>一直心之所向的旅程？</h2>
+      <div class="en-subtitle" style="color: rgba(255,255,255,0.4); margin-top:16px;">Designed for the discerning few</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 13: FAMILY / FRIENDS / TEAM -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="12">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h3>家庭出游</h3>
+      <div class="gold-line"></div>
+      <div class="body-text">
+        <p>两三个家庭一起邀约，在遥远的极地，给孩子们一场没有Wi-Fi 却充满星光的暑假。</p>
+      </div>
+    </div>
+    <div class="image-grid-2 fade-in">
+      <img src="assets/page14_img2.jpeg" alt="生态研学">
+      <img src="assets/page14_img3.jpeg" alt="青少年夏令营">
+    </div>
+
+    <div class="fade-in" style="margin-top:36px;">
+      <h3>好友携行</h3>
+      <div class="gold-line"></div>
+      <div class="body-text">
+        <p>几位相识多载的好友，一起约定在世界的尽头喝一杯威士忌，看午夜的太阳沉入冰海。</p>
+      </div>
+    </div>
+    <img src="assets/page15_img2.jpeg" class="image-rounded fade-in" alt="好友携行">
+
+    <div class="fade-in" style="margin-top:36px;">
+      <h3>团队探索</h3>
+      <div class="gold-line"></div>
+      <div class="body-text">
+        <p>一支追求极致体验的小型团队，以冰海和荒野为舞台，共创一段不可复制的美好记忆。</p>
+      </div>
+    </div>
+    <img src="assets/page15_img3.jpeg" class="image-rounded fade-in" alt="团队探索">
+
+    <div class="quote-block fade-in" style="margin-top:40px;">
+      有些旅程，不该被分割<br>
+      这艘船，只为"一起出发的人"而存在<br>
+      <span style="color: var(--gold); font-size:0.9rem;">全船仅8–12 席 · 全员包船定制</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 14: WEDDING ROSE DIARY -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="13">
+  <div class="full-image-bg" style="background-image: url('assets/page17_img1.jpeg'); background-position: center top;"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.2) 40%, rgba(10,15,26,0.85) 100%);"></div>
+  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
+    <div class="diary-entry fade-in">
+      <div class="diary-date">航海日记 ︱2025-9-29</div>
+      <div class="diary-location">米古平原 小雪转晴</div>
+      <div class="diary-text">
+        <p>一队朋友定了婚船。</p>
+        <p>为了在冰川下拍一张特别的照片，我从国内扛来一朵一米八的巨型玫瑰。</p>
+        <p>把它蜷在登山包里，露出花头来，跋涉过几座小峰、几条小河，拿给他们做道具。</p>
+        <br>
+        <p>在北极背一朵不合时宜的玫瑰花，穿越冰原，有点儿行为艺术。</p>
+        <p>但他们玩得很开心，玫瑰花也真的很上相。</p>
+        <br>
+        <p>十几年的硬核野外，这一瞬间的感受，还是新奇的。</p>
+        <p>——很可爱。</p>
+      </div>
+      <div class="diary-author">鲸湾探索 · 极地向导</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 15: EXPERIENCES -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="14">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">05</div>
+      <h2>极地体验</h2>
+      <div class="en-subtitle">The Experience</div>
+    </div>
+
+    <img src="assets/page18_img3.jpeg" class="image-rounded fade-in" alt="冰川探险">
+    <div class="tag-list fade-in">
+      <span class="tag">山野徒步</span>
+      <span class="tag">极地摄影</span>
+      <span class="tag">冰川探索</span>
+    </div>
+
+    <div class="image-grid-2 fade-in" style="margin-top:30px;">
+      <img src="assets/page19_img2.jpeg" alt="皮划艇">
+      <img src="assets/page19_img3.jpeg" alt="冲锋艇登陆">
+    </div>
+    <div class="image-grid-2 fade-in">
+      <img src="assets/page19_img5.jpeg" alt="无人机观鲸" style="height:200px;">
+      <img src="assets/page19_img6.jpeg" alt="路亚海钓" style="height:200px;">
+    </div>
+    <div class="tag-list fade-in">
+      <span class="tag">皮划艇</span>
+      <span class="tag">露营</span>
+      <span class="tag">冰潜</span>
+      <span class="tag">射击</span>
+      <span class="tag">帆船驾驶</span>
+      <span class="tag">冲锋艇登陆</span>
+      <span class="tag">无人机观鲸</span>
+      <span class="tag">路亚海钓</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 16: OUR TEAM -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="15">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number-light">06</div>
+      <h2>我们的团队</h2>
+      <div class="en-subtitle" style="color: rgba(255,255,255,0.35);">Our Team</div>
+    </div>
+    <div class="body-text fade-in" style="color: var(--text-light); margin-top:24px;">
+      <p style="color: var(--gold-light); font-weight:400;">我们不做"服务"，只做"共历"</p>
+      <br>
+      <p>我们的船长熟悉每一道峡湾的暗流，向导能识别某只座头鲸和她的幼崽。外籍帆船厨师深谙当地的极地风味，专属的中餐主厨更懂得熨帖你的中国胃。</p>
+      <br>
+      <p>我们的所有航行都严格遵循丹麦海事安全规范，冲锋舟、救生装备、户外系统一应俱全。</p>
+      <br>
+      <p>但最坚固的保障，是团队十几年极地经验沉淀出的直觉——何时该前进，何时该等待，何时该关掉引擎，让风说话。</p>
+      <br>
+      <p>我们深知，帆船已是北极最温柔的抵达方式，因此更以敬畏之心，积极与当地社区合作，不留痕迹，只留故事。</p>
+    </div>
+
+    <div class="fade-in" style="margin-top:40px;">
+      <h3 style="color: var(--gold-light);">团队组成</h3>
+      <div class="gold-line"></div>
+      <div class="tag-list" style="margin-bottom:12px;">
+        <span class="tag" style="color:var(--text-light);border-color:rgba(255,255,255,0.15);">当地船务组</span>
+        <span class="tag" style="color:var(--text-light);border-color:rgba(255,255,255,0.15);">国际化中文探险团队</span>
+        <span class="tag" style="color:var(--text-light);border-color:rgba(255,255,255,0.15);">中外双主厨</span>
+      </div>
+      <p class="body-text" style="color: var(--text-light); opacity:0.6; font-size:0.85rem;">接近1:1 的人员配比</p>
+    </div>
+
+    <div class="fade-in" style="margin-top:30px;">
+      <h3 style="color: var(--gold-light);">核心成员</h3>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="team-member fade-in">
+      <img src="assets/page21_img6.jpeg" class="team-avatar" alt="姚雪霏">
+      <div class="team-name" style="color:var(--text-light);">姚雪霏</div>
+      <div class="team-role">牛津大学动物生态学博士 · 鲸湾探索 联合创始人</div>
+      <div class="body-text" style="color:var(--text-light); font-size:0.85rem;">
+        <p>二十余年野外科研足迹遍及青藏高原、帕米尔与北极圈。曾五十余次深入南极、常驻北极三年，持冲锋舟驾驶与急救资质。译著包括《植物大发现》《荒野守望》《寂静的石头》《聆听冰川》等。</p>
+      </div>
+    </div>
+
+    <div class="team-member fade-in">
+      <img src="assets/page21_img5.jpeg" class="team-avatar" alt="王海宁">
+      <div class="team-name" style="color:var(--text-light);">王海宁</div>
+      <div class="team-role">中国南极中山站越冬队员 · 鲸湾探索 联合创始人</div>
+      <div class="body-text" style="color:var(--text-light); font-size:0.85rem;">
+        <p>2004 至 2006 年驻守南极中山站，从事极光观测、冰芯钻取与野外搜救，获国家海洋局"优秀南极考察队员"。2016 年起专注极地探险，足迹遍及南北极点、格陵兰与斯瓦尔巴。中国极地向导联盟（CPGA）发起人。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 17: ITINERARY -->
+<!-- ============================================ -->
+<section class="section content-section" data-section="16">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-number">07</div>
+      <h2>参考行程</h2>
+      <div class="en-subtitle">Itinerary Overview</div>
+    </div>
+
+    <img src="assets/page22_img1.jpeg" class="image-rounded fade-in" alt="艾奇冰川">
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 1</div>
+        <div class="itinerary-title">伊卢利萨特</div>
+        <div class="itinerary-desc">初入世界遗产冰峡湾，金色浮冰环绕</div>
+        <div class="itinerary-tags">抵达 · 登船 · 首夜静泊</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 2</div>
+        <div class="itinerary-title">北上 · 鲸迹村落</div>
+        <div class="itinerary-desc">在29 人的因纽特村，听苔原与海的故事</div>
+        <div class="itinerary-tags">寻鲸 · 登陆 · 午夜锚泊</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 3</div>
+        <div class="itinerary-title">深入 · 艾奇冰川</div>
+        <div class="itinerary-desc">贴近千米冰墙，听冰崩如雷或寂然</div>
+        <div class="itinerary-tags">冰川 · 生态 · 登高极目</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 4</div>
+        <div class="itinerary-title">隐秘峡湾</div>
+        <div class="itinerary-desc">穿越仅容一船的冰峡，探访隔绝村落</div>
+        <div class="itinerary-tags">秘境 · 浮冰 · 夜访人家</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 5</div>
+        <div class="itinerary-title">火山海岸</div>
+        <div class="itinerary-desc">在玄武岩海角，寻渡鸦巢与古瞭望所</div>
+        <div class="itinerary-tags">地质 · 足球 · 社区互动</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item">
+        <div class="itinerary-day">DAY 6</div>
+        <div class="itinerary-title">返程 · 告别</div>
+        <div class="itinerary-desc">最后一次寻鲸，满载故事归港</div>
+        <div class="itinerary-tags">回望 · 晚宴 · 整理行囊</div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="itinerary-item" style="border-bottom:none;">
+        <div class="itinerary-day">DAY 7</div>
+        <div class="itinerary-title">离船</div>
+        <div class="itinerary-desc">清晨告别，飞向日常，心留极地</div>
+      </div>
+    </div>
+
+    <p class="caption fade-in" style="margin-top:12px;">注：每日行程仅供参考，包船行程可单独定制。</p>
+
+    <img src="assets/page22_img2.jpeg" class="image-rounded fade-in" alt="伊卢利萨特小镇" style="margin-top:24px;">
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 18: MAP -->
+<!-- ============================================ -->
+<section class="section midnight-section" data-section="17">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h3 style="color: var(--gold-light);">航线地标</h3>
+      <div class="gold-line"></div>
+    </div>
+    <div class="map-locations fade-in">
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">伊卢利萨特</span>
+          <span class="map-location-en"> Ilulissat</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">罗德贝</span>
+          <span class="map-location-en"> Rodebay</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">凯凯赫塔克</span>
+          <span class="map-location-en"> Qeqertaq</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">艾奇冰川</span>
+          <span class="map-location-en"> Eqi Glacier</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">阿塔</span>
+          <span class="map-location-en"> Atâ</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">里滕本克</span>
+          <span class="map-location-en"> Ritenbenk</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">基德卢萨特</span>
+          <span class="map-location-en"> Kigdlûssat</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">迪斯科岛</span>
+          <span class="map-location-en"> Disko Island</span>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="map-location-dot"></div>
+        <div>
+          <span class="map-location-name">凯凯尔塔尔舒瓦克</span>
+          <span class="map-location-en"> Qeqertarsuaq</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 19: FINAL CTA -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="18" style="min-height: auto;">
+  <div class="full-image-bg" style="background-image: url('assets/page24_img2.jpeg'); background-position: center;"></div>
+  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.6) 0%, rgba(10,15,26,0.4) 40%, rgba(10,15,26,0.9) 100%);"></div>
+  <div class="full-image-content cta-section" style="min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center;">
+    <div class="fade-in">
+      <div class="en-subtitle-gold" style="color: var(--gold-light);">ARCTIC · 2026</div>
+      <h2 style="color:white; font-weight:200; font-size:1.5rem; line-height:2.2; margin-bottom:8px;">
+        仅四期航次，每期仅八至十二席。
+      </h2>
+      <p style="color: rgba(255,255,255,0.6); font-size:0.85rem; line-height:2; font-weight:300; margin-bottom:30px;">
+        你的故事，准备好在世界尽头书写了吗？
+      </p>
+    </div>
+
+    <div class="fade-in fade-in-delay-1">
+      <div class="gold-line-center"></div>
+      <p style="color: var(--text-light); font-size:0.95rem; line-height:2.2; font-weight:300; margin:20px 0;">
+        这一程，<br>
+        是一段轻拿轻放的史诗——<br>
+        留给下一顿年夜饭桌上的故事……
+      </p>
+      <div class="gold-line-center"></div>
+    </div>
+
+    <div class="fade-in fade-in-delay-2" style="margin-top:30px;">
+      <p style="color: var(--gold-light); font-size:0.7rem; letter-spacing:0.2em; margin-bottom:8px;">2026 北极私属航季</p>
+      <p style="color:white; font-family: 'Cinzel', serif; font-size:0.6rem; letter-spacing:0.4em; margin-bottom:24px;">WHALEBAY EXPEDITIONS</p>
+      <p style="color: rgba(255,255,255,0.3); font-size:0.7rem; margin-top:20px;">上海鲸湾探索邮轮管理有限公司</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p style="font-family: 'Cinzel', serif; letter-spacing: 0.3em; margin-bottom:8px;">WHALEBAY EXPEDITIONS</p>
+  <p>鲸湾探索 · SAILING GREENLAND 2026</p>
+</footer>
+
+<!-- ============================================ -->
+<!-- JAVASCRIPT -->
+<!-- ============================================ -->
+<script>
+// Loading screen
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('loadingScreen').classList.add('hidden');
+  }, 800);
+});
+
+// Fallback: hide loading screen after 3s max
+setTimeout(function() {
+  document.getElementById('loadingScreen').classList.add('hidden');
+}, 3000);
+
+// Navigation dots
+(function() {
+  var sections = document.querySelectorAll('.section');
+  var navDots = document.getElementById('navDots');
+
+  sections.forEach(function(section, i) {
+    var dot = document.createElement('button');
+    dot.className = 'nav-dot';
+    dot.setAttribute('aria-label', 'Section ' + (i + 1));
+    dot.addEventListener('click', function() {
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+    navDots.appendChild(dot);
+  });
+
+  var dots = navDots.querySelectorAll('.nav-dot');
+
+  function updateDots() {
+    var scrollTop = window.pageYOffset;
+    var windowHeight = window.innerHeight;
+    var activeIndex = 0;
+
+    sections.forEach(function(section, i) {
+      var rect = section.getBoundingClientRect();
+      if (rect.top < windowHeight * 0.5) {
+        activeIndex = i;
+      }
+    });
+
+    dots.forEach(function(dot, i) {
+      dot.classList.toggle('active', i === activeIndex);
+    });
+
+    // Show/hide dots
+    if (scrollTop > windowHeight * 0.3) {
+      navDots.classList.add('visible');
+    } else {
+      navDots.classList.remove('visible');
+    }
+  }
+
+  window.addEventListener('scroll', updateDots, { passive: true });
+  updateDots();
+})();
+
+// Scroll-triggered fade-in animations
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  document.querySelectorAll('.fade-in').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+
+// WeChat JS-SDK share config (placeholder — needs actual appId for production)
+(function() {
+  // WeChat share data
+  var shareData = {
+    title: '帆向格陵兰 · 2026北极私属远征',
+    desc: '红帆穿越冰海，全船仅八席。一场留给世界尽头的私属史诗。',
+    imgUrl: window.location.href.replace(/\/[^\/]*$/, '/') + 'assets/page1_img1.jpeg'
+  };
+
+  // If wx JS-SDK is loaded
+  if (typeof wx !== 'undefined') {
+    wx.ready(function() {
+      wx.updateAppMessageShareData({
+        title: shareData.title,
+        desc: shareData.desc,
+        link: window.location.href,
+        imgUrl: shareData.imgUrl,
+        success: function() {}
+      });
+      wx.updateTimelineShareData({
+        title: shareData.title + ' | ' + shareData.desc,
+        link: window.location.href,
+        imgUrl: shareData.imgUrl,
+        success: function() {}
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
