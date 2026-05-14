@@ -789,9 +789,21 @@ h3 {
 @supports (-webkit-overflow-scrolling: touch) {
   body { -webkit-overflow-scrolling: touch; }
 }
+
+/* shared top bar */
+.wb-topbar { position:fixed; top:0; left:0; right:0; z-index:1000; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; background:rgba(10,10,18,0.75); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,0.08); }
+.wb-topbar a { color:#f0f0f5; font-size:0.78rem; letter-spacing:0.12em; text-decoration:none; }
+.wb-brand { font-family:'Cinzel',serif; font-weight:500; }
+.wb-brand .zh { font-family:'Noto Serif SC',serif; margin-right:0.5em; letter-spacing:0.08em; }
+.wb-back { opacity:0.7; transition:opacity .2s; } .wb-back:hover { opacity:1; }
+@media (max-width:600px) { .wb-topbar { height:48px; padding:0 16px; } .wb-topbar a { font-size:0.7rem; } }
 </style>
 </head>
 <body>
+<header class="wb-topbar">
+  <a href="https://whalebay.world" class="wb-brand"><span class="zh">鲸湾探索</span>WHALEBAY EXPEDITIONS</a>
+  <a href="https://whalebay.world" class="wb-back">← 返回首页</a>
+</header>
 
 <!-- LOADING SCREEN -->
 <div class="loading-screen" id="loadingScreen">
