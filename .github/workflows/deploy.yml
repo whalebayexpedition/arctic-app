@@ -1,0 +1,42 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage deploy directory (exclude source materials)
+        run: |
+          mkdir -p /tmp/deploy
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.gitignore' \
+            --exclude='.wrangler/' \
+            --exclude='CLAUDE.md' \
+            --exclude='DEPLOY-NOTES.md' \
+            --exclude='README.md' \
+            --exclude='docs/' \
+            --exclude='diary.txt' \
+            --exclude='*.pdf' \
+            --exclude='*.pptx' \
+            ./ /tmp/deploy/
+          echo "Staged $(find /tmp/deploy -type f | wc -l) files, $(du -sh /tmp/deploy | cut -f1) total"
+
+      - name: Deploy with wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 30ebb84974d1bfa09da734203afdbb43
+          command: pages deploy /tmp/deploy --project-name arctic-app --branch main
