@@ -632,6 +632,22 @@ h3 {
   border: 2px solid var(--gold);
   margin-bottom: 12px;
 }
+.team-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+.team-link:hover { opacity: 0.72; }
+.team-link img.team-avatar {
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+.team-link:hover img.team-avatar {
+  transform: scale(1.03);
+  filter: brightness(1.06);
+}
+
 .team-name {
   font-size: 1.1rem;
   font-weight: 500;
@@ -859,7 +875,7 @@ h3 {
       <div class="diary-text">
         <p>艾奇冰川（Eqi）历来繁忙。</p>
         <p>其实它边上那些小峡湾，也有冰川，<br>只是少有人至罢了。</p>
-        <p>比如面前这个南冰川*，我觉得也挺美的，完全不输。</p>
+        <p>比如面前这个南冰川（Sermeq），我觉得也挺美，完全不输。</p>
         <br>
         <p>睡了。</p>
         <p>半夜，船轻轻地晃啊晃。迷迷糊糊的，像是梦。</p>
@@ -872,7 +888,6 @@ h3 {
         <p>有时，它悄然发生，<br>只留给夜泊者一人听见。</p>
         <p>月牙儿碎在海面，仿佛狡黠地眨了眼。</p>
       </div>
-      <p class="fade-in caption-light" style="text-align:center;">* 格陵兰语: Sermeq Kujalleq</p>
       <div class="diary-author">鲸湾探索 · 极地向导</div>
     </div>
     <img src="assets/red_sail_night.png" class="image-rounded fade-in fade-in-delay-2" alt="夜泊冰川">
@@ -933,7 +948,7 @@ h3 {
     <div class="fade-in">
       <div class="section-number-light">03</div>
       <h2>我们的船</h2>
-      <div class="en-subtitle" style="color: rgba(255,255,255,0.35);">Why Sail With Us?</div>
+      <div class="en-subtitle" style="color: rgba(255,255,255,0.35);">Our Ship</div>
     </div>
     <div class="body-text fade-in fade-in-delay-1" style="color: var(--text-light);">
       <p>她出生在德国海滨的造船厂，钢壳厚实，专为高纬度风暴与浮冰而造。</p>
@@ -964,7 +979,7 @@ h3 {
 <!-- SECTION 7: SHIP FULL IMAGE -->
 <!-- ============================================ -->
 <section class="full-image-section section" data-section="6">
-  <div class="full-image-bg" style="background-image: url('assets/page7_img1.jpeg');"></div>
+  <div class="full-image-bg" style="background-image: url('assets/page7_img1.jpeg'); background-position: center 65%;"></div>
   <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.1) 50%, rgba(10,15,26,0.5) 100%);"></div>
   <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:80px;">
     <h2 class="fade-in" style="text-align:center; color:white; font-weight:200; letter-spacing:0.15em;">风之爱</h2>
@@ -980,7 +995,7 @@ h3 {
     <div class="fade-in">
       <div class="section-number">04</div>
       <h2>格陵兰时刻</h2>
-      <div class="en-subtitle">Some Moments in Greenland</div>
+      <div class="en-subtitle">Greenland Moments</div>
     </div>
     <img src="assets/page8_img1.jpeg" class="image-rounded fade-in" alt="午夜阳光">
     <div class="fade-in">
@@ -1045,14 +1060,14 @@ h3 {
       <div class="diary-text" style="color: var(--text-body);">
         <p>观鲸，是一门需要学习的课程。</p>
         <br>
-        <p>你看到它喷出的汽柱，听到巨大的呼吸声，然后是寂静，仿佛失去了。</p>
+        <p>你看到它喷出的汽柱，听到巨大的呼吸声，<br>然后是寂静，仿佛失去了。</p>
         <p>你等，一分钟、两分钟、三分钟……</p>
-        <p>在浩瀚无垠的海面，追寻波浪和鸟群的蛛丝马迹，全心全意地守候下一次相遇的可能。</p>
+        <p>在浩瀚无垠的海面，追寻波浪和鸟群的蛛丝马迹，<br>全心全意地守候下一次相遇的可能。</p>
         <br>
         <p>然后又是巨大的一声呼吸。你的心脏也随之一跳。</p>
         <p>然后又是寂静。又是等……</p>
         <br>
-        <p>然后你慢慢习惯这个节奏。然后你开始看出它在睡觉、在巡游、在捕食、在你周围欢快地玩耍起来。</p>
+        <p>然后你慢慢习惯这个节奏。<br>然后你开始看出它在睡觉、在巡游、在捕食、在你周围欢快地玩耍起来。</p>
         <br>
         <p>这便是两个不同物种，相识的伊始。</p>
       </div>
@@ -1171,13 +1186,14 @@ h3 {
       <div class="diary-location">米古平原 小雪转晴</div>
       <div class="diary-text">
         <p>一队朋友定了婚船。</p>
-        <p>为了在冰川下拍一张特别的照片，我从国内扛来一朵一米八的巨型玫瑰。</p>
-        <p>把它蜷在登山包里，露出花头来，跋涉过几座小峰、几条小河，拿给他们做道具。</p>
+        <p>为了在冰川下拍一张特别的照片，<br>我从国内扛来一朵一米八的巨型玫瑰。</p>
         <br>
-        <p>在北极背一朵不合时宜的玫瑰花，穿越冰原，有点儿行为艺术。</p>
+        <p>把它蜷在登山包里，露出花头来，<br>跋涉过几座小峰、几条小河，拿给他们做道具。</p>
+        <br>
+        <p>在北极背一朵不合时宜的玫瑰花，穿越冰原，<br>有点儿行为艺术。</p>
         <p>但他们玩得很开心，玫瑰花也真的很上相。</p>
         <br>
-        <p>十几年的硬核野外，这一瞬间的感受，还是新奇的。</p>
+        <p>十几年的硬核野外，<br>这一瞬间的感受，还是新奇的。</p>
         <p>——很可爱。</p>
       </div>
       <div class="diary-author">鲸湾探索 · 极地向导</div>
@@ -1231,7 +1247,7 @@ h3 {
   <div class="section-inner">
     <div class="fade-in">
       <div class="section-number-light">06</div>
-      <h2>我们的团队</h2>
+      <h2><a href="https://whalebay.world/about/" class="team-link">我们的团队</a></h2>
       <div class="en-subtitle" style="color: rgba(255,255,255,0.35);">Our Team</div>
     </div>
     <div class="body-text fade-in" style="color: var(--text-light); margin-top:24px;">
@@ -1258,12 +1274,12 @@ h3 {
     </div>
 
     <div class="fade-in" style="margin-top:30px;">
-      <h3 style="color: var(--gold-light);">核心成员</h3>
+      <h3 style="color: var(--gold-light);"><a href="https://whalebay.world/about/" class="team-link">核心成员</a></h3>
       <div class="gold-line"></div>
     </div>
 
     <div class="team-member fade-in">
-      <img src="assets/page21_img6.jpeg" class="team-avatar" alt="姚雪霏">
+      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/page21_img6.jpeg" class="team-avatar" alt="姚雪霏"></a>
       <div class="team-name" style="color:var(--text-light);">姚雪霏</div>
       <div class="team-role">牛津大学动物生态学博士 · 鲸湾探索 联合创始人</div>
       <div class="body-text" style="color:var(--text-light); font-size:0.85rem;">
@@ -1272,7 +1288,7 @@ h3 {
     </div>
 
     <div class="team-member fade-in">
-      <img src="assets/page21_img5.jpeg" class="team-avatar" alt="王海宁">
+      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/page21_img5.jpeg" class="team-avatar" alt="王海宁"></a>
       <div class="team-name" style="color:var(--text-light);">王海宁</div>
       <div class="team-role">中国南极中山站越冬队员 · 鲸湾探索 联合创始人</div>
       <div class="body-text" style="color:var(--text-light); font-size:0.85rem;">
@@ -1470,7 +1486,6 @@ h3 {
     <div class="fade-in fade-in-delay-2" style="margin-top:30px;">
       <p style="color: var(--gold-light); font-size:0.7rem; letter-spacing:0.2em; margin-bottom:8px;">2026 北极私属航季</p>
       <p style="color:white; font-family: 'Cinzel', serif; font-size:0.6rem; letter-spacing:0.4em; margin-bottom:24px;">WHALEBAY EXPEDITIONS</p>
-      <p style="color: rgba(255,255,255,0.3); font-size:0.7rem; margin-top:20px;">上海鲸湾探索邮轮管理有限公司</p>
     </div>
   </div>
 </section>
