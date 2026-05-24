@@ -832,6 +832,52 @@ h3 {
 .wb-brand .zh { font-family:'Noto Serif SC',serif; margin-right:0.5em; letter-spacing:0.08em; }
 .wb-back { opacity:0.7; transition:opacity .2s; } .wb-back:hover { opacity:1; }
 @media (max-width:600px) { .wb-topbar { height:48px; padding:0 16px; } .wb-topbar a { font-size:0.7rem; } }
+
+/* ===== MOBILE READING IMPROVEMENTS (≤480px) ===== */
+@media (max-width: 480px) {
+  .section-inner { padding: 48px 20px !important; }
+  .full-image-content { padding: 48px 20px !important; }
+  .hero-title { font-size: 1.85rem !important; letter-spacing: .14em !important; line-height: 1.25 !important; }
+  .hero-subtitle, .hero-subtitle-en { font-size: .82rem !important; letter-spacing: .22em !important; }
+  .hero-tagline { font-size: .8rem !important; letter-spacing: .16em !important; }
+  .hero-year { font-size: .62rem !important; letter-spacing: .28em !important; }
+  .hero-brand-en { font-size: .65rem !important; letter-spacing: .38em !important; }
+  .hero-content { padding: 32px 20px !important; }
+  h2 { font-size: 1.4rem !important; letter-spacing: .12em !important; }
+  h3 { font-size: 1.05rem !important; letter-spacing: .08em !important; }
+  .en-eyebrow, .en-subtitle { font-size: .65rem !important; letter-spacing: .22em !important; }
+  .body-text, .body-text-serif { font-size: 1rem !important; line-height: 1.95 !important; }
+  .image-grid-2 { grid-template-columns: 1fr !important; gap: 12px !important; }
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+  .specs-table { display: block; width: 100% !important; }
+  .specs-table tbody { display: block; width: 100%; }
+  .specs-table tr { display: block; padding: 10px 0 !important; border-bottom: 1px solid rgba(255,255,255,.08) !important; }
+  .specs-table tr:last-child { border-bottom: none !important; }
+  .specs-table td { display: block !important; padding: 2px 0 !important; width: 100% !important; border: none !important; }
+  .specs-table td:first-child { color: var(--gold-light, var(--amber-light)) !important; font-size: .78rem !important; letter-spacing: .12em !important; margin-bottom: 4px; }
+  .specs-table td:not(:first-child) { font-size: .95rem !important; opacity: .92; }
+  .full-image-section .full-image-content h2 { font-size: 1.5rem !important; }
+  .team-avatar { width: 110px !important; height: 110px !important; }
+  .team-name { font-size: 1.05rem !important; }
+  .team-role { font-size: .82rem !important; }
+  .team-bio, .body-text { font-size: .9rem !important; line-height: 1.85 !important; }
+  .wb-topbar { height: 50px !important; padding: 0 16px !important; }
+  .wb-topbar .wb-brand { font-size: .65rem !important; letter-spacing: .25em !important; }
+  .wb-topbar .wb-brand .zh { font-size: .8rem !important; }
+  .wb-topbar .wb-back { font-size: .68rem !important; letter-spacing: .12em !important; }
+  .day-row { padding: 16px 0 !important; }
+  .day-label { font-size: .85rem !important; letter-spacing: .25em !important; }
+  .day-body .place { font-size: 1rem !important; }
+  .day-body .desc { font-size: .92rem !important; }
+}
+@media (max-width: 375px) {
+  .hero-title { font-size: 1.65rem !important; }
+  h2 { font-size: 1.28rem !important; }
+  .section-inner { padding: 44px 18px !important; }
+  .full-image-content { padding: 44px 18px !important; }
+}
+
 </style>
 </head>
 <body>

@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="format-detection" content="telephone=yes">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>北极追光 · 格陵兰努克峡湾 | 鲸湾探索</title>
-<meta name="description" content="2026 秋 · 努克峡湾追光航季 · 6 天 5 夜 · 全船十二席 · 限定两期 · 因纽特家族船只 途鹭">
+<title>北极熊幼儿园 · 弗兰格尔岛 | 鲸湾探索</title>
+<meta name="description" content="2026 夏 · 弗兰格尔岛 VIP 探险 · 13 天极地航季 · 全船 40 席 · 赫罗莫夫教授号">
 
 <!-- Share Card -->
-<meta property="og:title" content="北极追光 · 格陵兰努克峡湾">
-<meta property="og:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
-<meta property="og:image" content="assets/web/hero.jpg">
+<meta property="og:title" content="北极熊幼儿园 · 弗兰格尔岛">
+<meta property="og:description" content="八月一期一会。穿越楚科奇，登陆北极熊产房。">
+<meta property="og:image" content="assets/hero-cover.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://arctic.whalebay.world/nuuk">
+<meta property="og:url" content="https://wrangel.whalebay.world">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="北极追光 · 格陵兰努克峡湾">
-<meta name="twitter:description" content="九月已至，十月未封冻。在因纽特家族的船上追北极的光。">
-<meta name="twitter:image" content="assets/web/hero.jpg">
+<meta name="twitter:title" content="北极熊幼儿园 · 弗兰格尔岛">
+<meta name="twitter:description" content="八月一期一会。穿越楚科奇，登陆北极熊产房。">
+<meta name="twitter:image" content="assets/hero-cover.jpg">
 
 <!-- Google Fonts: Noto Serif SC (display), Noto Sans SC (secondary), Cinzel (english) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -296,7 +296,7 @@ h3 {
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('assets/web/hero.jpg') 90% center / cover no-repeat;
+  background: url('assets/hero-cover.jpg') 90% center / cover no-repeat;
   filter: brightness(.82) saturate(1.22);
 }
 @media (min-width: 780px) {
@@ -1015,6 +1015,90 @@ h3 {
 .wb-brand .zh { font-family:'Noto Serif SC',serif; margin-right:0.5em; letter-spacing:0.08em; }
 .wb-back { opacity:0.7; transition:opacity .2s; } .wb-back:hover { opacity:1; }
 @media (max-width:600px) { .wb-topbar { height:48px; padding:0 16px; } .wb-topbar a { font-size:0.7rem; } }
+
+
+  .day-hero-number {
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+    font-size: clamp(2.8rem, 7vw, 4.6rem);
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-bottom: 22px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+  @media (max-width:480px) {
+    .day-hero-number { font-size: 2.4rem !important; letter-spacing: 0.06em !important; }
+  }
+
+  /* ===== MOBILE READING IMPROVEMENTS (≤480px) ===== */
+@media (max-width: 480px) {
+  /* Tighter section padding so content uses screen width */
+  .section-inner { padding: 48px 20px !important; }
+  .full-image-content { padding: 48px 20px !important; }
+
+  /* Hero text scales down */
+  .hero-title { font-size: 1.85rem !important; letter-spacing: .14em !important; line-height: 1.25 !important; }
+  .hero-subtitle, .hero-subtitle-en { font-size: .82rem !important; letter-spacing: .22em !important; }
+  .hero-tagline { font-size: .8rem !important; letter-spacing: .16em !important; }
+  .hero-year { font-size: .62rem !important; letter-spacing: .28em !important; }
+  .hero-brand-en { font-size: .65rem !important; letter-spacing: .38em !important; }
+  .hero-content { padding: 32px 20px !important; }
+
+  /* Section headings fit narrow screens */
+  h2 { font-size: 1.4rem !important; letter-spacing: .12em !important; }
+  h3 { font-size: 1.05rem !important; letter-spacing: .08em !important; }
+  .en-eyebrow { font-size: .65rem !important; letter-spacing: .22em !important; }
+
+  /* Body text readable */
+  .body-text, .body-text-serif { font-size: 1rem !important; line-height: 1.95 !important; }
+  .body-text p, .body-text-serif p { font-size: 1rem !important; }
+
+  /* Two-column image grids stack on phone */
+  .image-grid-2 { grid-template-columns: 1fr !important; gap: 12px !important; }
+  /* Inline-style 2-col grids also stack */
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+  [style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+
+  /* Specs table: stack each row vertically for narrow screens */
+  .specs-table { display: block; width: 100% !important; }
+  .specs-table tbody { display: block; width: 100%; }
+  .specs-table tr { display: block; padding: 10px 0 !important; border-bottom: 1px solid rgba(255,255,255,.08) !important; }
+  .specs-table tr:last-child { border-bottom: none !important; }
+  .specs-table td { display: block !important; padding: 2px 0 !important; width: 100% !important; border: none !important; }
+  .specs-table td:first-child { color: var(--amber-light) !important; font-size: .78rem !important; letter-spacing: .12em !important; margin-bottom: 4px; }
+  .specs-table td:not(:first-child) { font-size: .95rem !important; opacity: .92; }
+
+  /* Day-by-day full-image sections: text wraps tighter */
+  .full-image-section .full-image-content h2 { font-size: 1.5rem !important; }
+  .full-image-section .section-number-light { font-size: .72rem !important; letter-spacing: .3em !important; }
+
+  /* Team avatars not too big */
+  .team-avatar { width: 110px !important; height: 110px !important; }
+  .team-name { font-size: 1.05rem !important; }
+  .team-role { font-size: .82rem !important; }
+  .team-bio { font-size: .9rem !important; line-height: 1.85 !important; }
+
+  /* Topbar smaller */
+  .wb-topbar { height: 50px !important; padding: 0 16px !important; }
+  .wb-topbar .wb-brand { font-size: .65rem !important; letter-spacing: .25em !important; }
+  .wb-topbar .wb-brand .zh { font-size: .8rem !important; }
+  .wb-topbar .wb-back { font-size: .68rem !important; letter-spacing: .12em !important; }
+
+  /* Day-ribbon (used on Nuuk/Wrangel itinerary): keep stacked but breathing */
+  .day-row { padding: 16px 0 !important; }
+  .day-label { font-size: .85rem !important; letter-spacing: .25em !important; }
+  .day-body .place { font-size: 1rem !important; }
+  .day-body .desc { font-size: .92rem !important; }
+}
+
+/* Smaller phones (≤375px) — tighten further */
+@media (max-width: 375px) {
+  .hero-title { font-size: 1.65rem !important; }
+  h2 { font-size: 1.28rem !important; }
+  .section-inner { padding: 44px 18px !important; }
+  .full-image-content { padding: 44px 18px !important; }
+}
+
 </style>
 </head>
 <body>
@@ -1025,7 +1109,7 @@ h3 {
 
 <!-- ===== LOADING ===== -->
 <div class="loading-screen" id="loadingScreen">
-  <div class="loading-logo">WHALEBAY · NUUK</div>
+  <div class="loading-logo">WHALEBAY · WRANGEL</div>
   <div class="loading-bar"></div>
 </div>
 
@@ -1041,13 +1125,13 @@ h3 {
   <div class="hero-content">
     <div class="hero-brand">鲸湾探索</div>
     <div class="hero-brand-en">WHALEBAY EXPEDITIONS</div>
-    <h1 class="hero-title">北极追光</h1>
-    <div class="hero-subtitle">格陵兰 · 努克峡湾</div>
+    <h1 class="hero-title">北极熊幼儿园</h1>
+    <div class="hero-subtitle">弗兰格尔岛 · 北方航道</div>
     <div class="hero-taglines">
-      <div class="hero-tagline">6 天 5 夜 · 全船十二席</div>
-      <div class="hero-tagline">2026 秋 · 限定两期 · 追光大年</div>
+      <div class="hero-tagline">2026 夏 · 一年一会</div>
+      <div class="hero-tagline">13 天 · 全船 40 席</div>
     </div>
-    <div class="hero-year">ARCTIC · GREENLAND · 2026</div>
+    <div class="hero-year">RUSSIAN ARCTIC · WRANGEL ISLAND · 2026</div>
   </div>
   <div class="hero-scroll">
     <div class="hero-scroll-line"></div>
@@ -1056,340 +1140,144 @@ h3 {
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 01 · FULL-BLEED OPENING — 九月十月 -->
+<!-- SECTION 01 · 序章 — A QUIET LINE -->
 <!-- ============================================ -->
-<section class="full-image-section section" data-section="1">
-  <div class="full-image-bg" style="background-image:url('assets/aurora_people_add_pixel.png');filter:saturate(1.3) brightness(1.1) contrast(0.95);"></div>
-  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(200,120,160,.15) 0%,rgba(180,100,140,.1) 50%,rgba(14,22,32,.2) 100%);"></div>
-  <div class="full-image-content" style="justify-content:flex-end;">
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 01B · 最长的追光 — TEXT BREAK -->
-<!-- ============================================ -->
-<section class="section dark-section" data-section="1b" style="min-height:auto;">
-  <div class="section-inner" style="text-align:center;padding:80px 28px;">
-    <div class="opening-line fade-in">
-      <span class="line">九月，极光已至。</span>
-      <span class="line">十月，峡湾未封冻。</span>
-      <span class="line" style="margin-top:14px;display:inline-block;color:var(--lilac);font-size:.85rem;letter-spacing:.12em;">一年里最短的窗口，最长的追光。</span>
+<section class="section dark-section" data-section="0b">
+  <div class="section-inner" style="text-align:center;">
+    <div class="fade-in" style="font-family:'Noto Serif SC','PingFang SC',serif;font-size:1.25rem;font-weight:200;letter-spacing:.18em;line-height:2.4;color:var(--lilac);max-width:520px;margin:0 auto;">
+      一年仅此一期<br>
+      走进世界尽头
+      <span class="gold-line-center"></span>
+      <span style="display:inline-block;margin-top:20px;color:var(--amber-light);font-size:.85rem;letter-spacing:.22em;">2026 · 8月20日 — 9月3日</span>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 02 · 航海日记 01 · 在努克醒来 -->
+<!-- HIGHLIGHT 01 · 极地熊妈妈的产房 -->
 <!-- ============================================ -->
-<section class="section dark-section" data-section="2">
-  <div class="section-inner">
-    <div class="fade-in">
-      <div class="section-number-light">01</div>
+<section class="full-image-section section" data-section="h1">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-24.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="section-number-light" style="text-align:left">01</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Polar Bear Cradle</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">极地熊妈妈的产房</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>弗兰格尔岛，<br>是全球北极熊产仔密度最高的栖息地。<br>每年约 400 只小熊在这里出生。</p>
+      <p style="margin-top:20px;">UNESCO 世界自然遗产，<br>最后一群猛犸象的避难之地。<br>更新世以来 · 与大陆隔绝至今。</p>
+      <p style="margin-top:28px;color:var(--lilac);font-family:'Noto Serif SC',serif;font-size:.98rem;letter-spacing:.1em;">— 在母熊带崽的礁石之畔，我们驻足整日。</p>
     </div>
-    <div class="diary-entry fade-in fade-in-delay-1">
-      <div class="diary-date">航海日记 ︱2025-10-03</div>
-      <div class="diary-location">努克 · 清晨的港口</div>
-      <div class="diary-text">
-        <!-- CONTENT-TODO: diary-01 — 150 字 first-person. Beats:
-             apartment-window morning light over Nuuk harbor,
-             Tulu tied below in grey dawn, 囍 charm noted in the
-             guest cabin before boarding, closing line sets up
-             the aurora night. Keep restrained. -->
-        <p>清晨六点，天还没亮。</p>
-
-        <p>码头的灯一盏盏熄灭，我们明日的船泊在最里，<br>黄色的船身在灰蓝色里先一步醒来。</p>
-
-        <p>楼下的海员餐厅早早开了门，<br>服务员递出咖啡，笑着说，<br>今天预报晴，适合出海。</p>
-
-        <p>往船去，窗上贴着红色的"囍"字 ——<br>？<br>因纽特的船家老爷爷，<br>难道赶上流行、学上了中文吗？</p>
-      </div>
-      <div class="diary-author">鲸湾探索 · 极地向导</div>
-    </div>
-    <img src="assets/ship_ice_night_pink.png"
-         class="image-rounded fade-in fade-in-delay-2"
-         alt="夜泊冰海 · 船宿的黄昏"
-         style="width:100%;margin:20px 0;border-radius:6px;"
-         loading="lazy">
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 03 · 追光之夜 — AURORA NIGHTS -->
+<!-- HIGHLIGHT 02 · 极东之角 -->
 <!-- ============================================ -->
-<section class="full-image-section section aurora-section" data-section="3">
-  <div class="full-image-bg" style="background-image:url('assets/wrangel_aurora.jpg');"></div>
-  <div class="aurora-shimmer"></div>
-  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.55) 0%,rgba(7,12,18,.35) 40%,rgba(7,12,18,.85) 100%);"></div>
+<section class="full-image-section section" data-section="h2">
+  <div class="full-image-bg" style="background-image:url('assets/extra/dezhnev-01.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.15) 40%,rgba(7,12,18,.88) 100%);"></div>
   <div class="full-image-content">
     <div class="fade-in"><div class="section-number-light" style="text-align:left">02</div></div>
-    <h2 class="aurora-title fade-in fade-in-delay-1">追光之夜</h2>
-    <div class="aurora-subtitle fade-in fade-in-delay-1">CHASING AURORA</div>
-    <div class="aurora-movements fade-in fade-in-delay-2">
-      <div class="mv"><span class="num">一</span>船长的敲门声</div>
-      <div class="mv"><span class="num">二</span>甲板上的羽绒服与惊叹</div>
-      <div class="mv"><span class="num">三</span>绿丝带悄悄升起，舞剧开幕，没有人再说话</div>
-    </div>
-    <div class="aurora-quote fade-in fade-in-delay-3">
-      「今年是极光大年，追光成功概率极高。」
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Cape Dezhnev</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">极东之角</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>欧亚大陆最东之角 ——<br>杰日尼奥夫角。</p>
+      <p style="margin-top:20px;">站在角上，<br>晴日可远望 86 公里外的阿拉斯加海岸。<br>白令海峡 · 两洲遥相对望。</p>
+      <p style="margin-top:28px;color:var(--lilac);font-family:'Noto Serif SC',serif;font-size:.98rem;letter-spacing:.1em;">— 这是真正的「世界尽头」。</p>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 04 · 金色苔原 — GOLDEN TUNDRA -->
+<!-- HIGHLIGHT 03 · 万象之海 -->
 <!-- ============================================ -->
-<section class="section content-section tundra-section" data-section="4">
+<section class="full-image-section section" data-section="h3">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-19.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.42) 0%,rgba(7,12,18,.15) 40%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="section-number-light" style="text-align:left">03</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Walrus Coast</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">万象之海</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>米奇金沙嘴，<br>长 60 公里 · 平均宽仅 100 米。<br>动物学自然保护区。</p>
+      <p style="margin-top:20px;">数以千计的海象，<br>从礁石、滩涂、浮冰一一涌上岸。<br>这是地球上最壮观的群居景观之一。</p>
+      <p style="margin-top:28px;color:var(--lilac);font-family:'Noto Serif SC',serif;font-size:.98rem;letter-spacing:.1em;">— 冲锋艇缓缓靠近，呼吸放轻。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- HIGHLIGHT 04 · 楚科奇心 -->
+<!-- ============================================ -->
+<section class="full-image-section section" data-section="h4">
+  <div class="full-image-bg" style="background-image:url('assets/extra/chukchi-01.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.4) 0%,rgba(7,12,18,.12) 40%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="section-number-light" style="text-align:left">04</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Chukchi Heart</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">楚科奇心</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>伊特格拉恩岛的鲸骨小道 ——<br>16 世纪前古爱斯基摩人以弓头鲸骨竖立而成的圣地。<br>已列入俄罗斯文化遗产。</p>
+      <p style="margin-top:20px;">乌埃连村的骨雕作坊，<br>拉夫连季亚村的传统舞蹈，<br>白令亚皮筏盛会 ——<br>原住民坚守至今的文化心脏。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SHIP · 赫罗莫夫教授号 — TEXT -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="ship">
   <div class="section-inner">
     <div class="fade-in">
-      <div class="section-number">03</div>
-      <div class="en-eyebrow">Golden Tundra</div>
-      <h2>金色苔原</h2>
+      <div class="section-number-light">05</div>
+      <div class="en-eyebrow">Our Ship</div>
+      <h2>赫罗莫夫教授号</h2>
       <div class="gold-line"></div>
     </div>
-    <div class="body-text body-text-serif fade-in fade-in-delay-1">
-      <p>九月末，努克峡湾两岸的苔原由绿变金。</p>
-      <p>虎耳草、岩高兰、北极罂粟爬满低地；风一吹，驯鹿的踪影在山脊上若隐若现。</p>
-      <p>白昼仍有十来个小时：徒步高处看峡湾，或在船边手钓，静待极光又一夜归来。</p>
+    <div class="body-text fade-in fade-in-delay-1" style="color:var(--text-light);">
+      <p>赫罗莫夫教授号 —— 一艘真正的极地科考船。</p>
+      <br>
+      <p>1974 年下水，加固冰级船体，<br>先后服役于俄罗斯水文气象总署的极地考察任务，<br>常年在白令海与北冰洋之间穿行。</p>
+      <br>
+      <p>退役改装后，仍保留着科考船的工作肌理 ——<br>船桥的航海图、甲板的吊艇、图书室与讲座厅。</p>
+      <br>
+      <p>船身坚厚，吃水稳健，可深入浮冰带；<br>船上配有冲锋艇、桑拿房、专家讲堂。</p>
+      <br>
+      <p style="color:var(--amber-light);">全船仅 40 席 · 一年一期。</p>
     </div>
-    <div class="fade-in fade-in-delay-2"
-         role="img" aria-label="船舱望远镜 · 晨光中的峡湾"
-         style="width:100%;aspect-ratio:4/3;margin:20px 0;background:url('assets/IMG_20251003_083958.jpg') center/cover no-repeat;border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,.12);"></div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION 05 · 囍 · 远方的家 — THE FAMILY BOAT -->
+<!-- SHIP · FULL IMAGE -->
 <!-- ============================================ -->
-<section class="section dark-section family-section" data-section="5">
+<section class="full-image-section section" data-section="ship-img">
+  <div class="full-image-bg" style="background-image:url('assets/extra/khromov-02.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(10,15,26,.3) 0%,rgba(10,15,26,.1) 50%,rgba(10,15,26,.55) 100%);"></div>
+  <div class="full-image-content" style="justify-content:flex-end;padding-bottom:80px;">
+    <h2 class="fade-in" style="text-align:center; color:white; font-weight:200; letter-spacing:0.15em;">赫罗莫夫教授号</h2>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- TEAM · 我们的团队 -->
+<!-- ============================================ -->
+<section class="section dark-section team-section" data-section="team">
   <div class="section-inner">
-    <div class="fade-in">
-      <div class="section-number-light">04</div>
-      <div class="en-eyebrow">Our Ship</div>
-      <h2>我们的船</h2>
-      <div class="family-rule"></div>
-    </div>
-    <div class="family-body fade-in fade-in-delay-1">
-      <!-- CONTENT-TODO: family-paragraph — confirm wording with user before publish -->
-      <p>途鹭 是一艘因纽特家族的工作船。<strong>老父亲掌舵</strong>，<strong>母亲管厨房</strong>，<strong>儿子是大副</strong>。从早到晚的秩序都是他们的。</p>
-      <p>他们不把客人当客人。他们不会讲一套专业导游的台词，不会在晚餐时演奏传统乐器给你看。他们只是把船开好、把饭做好、把你送到天光最好的地方。</p>
-      <p>船上有鲸鱼肉、海豹油，也有不知哪儿来的中国泡面、老干妈和辣椒粉，他们小心翼翼地留着，数量有限。<br>客舱窗边挂着红灯笼和金鱼剪纸 —— 去年某位客人留下的。<br>老船长没摘下来。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 05b · 途鹭 — TULU FULL IMAGE -->
-<!-- ============================================ -->
-<section class="full-image-section section" data-section="5b">
-  <div class="full-image-bg" style="background-image: url('assets/tulu_moon.jpg'); background-position: 40% center;"></div>
-  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.1) 50%, rgba(10,15,26,0.5) 100%);"></div>
-  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:80px;">
-    <h2 class="fade-in" style="text-align:center; color:white; font-weight:200; letter-spacing:0.15em;">途鹭</h2>
-    <p class="fade-in fade-in-delay-1 caption-light" style="text-align:center;">一艘船，一个家</p>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 07 · 格陵兰时刻 — GREENLAND MOMENTS -->
-<!-- ============================================ -->
-<section class="full-image-section section" data-section="7">
-  <div class="full-image-bg" style="background-image: url('assets/page9_img3.jpeg');"></div>
-  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.5) 0%, rgba(10,15,26,0.2) 40%, rgba(10,15,26,0.85) 100%);"></div>
-  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
     <div class="fade-in">
       <div class="section-number-light">06</div>
-      <div class="en-eyebrow" style="color: rgba(255,255,255,0.5);">Greenland Moments</div>
-      <h2 style="color:#fff;">格陵兰时刻</h2>
-      <div class="gold-line"></div>
-    </div>
-    <div class="fade-in fade-in-delay-1" style="margin-top:30px;">
-      <h3 style="color: var(--amber-light);">冰海奇景</h3>
-      <div class="gold-line"></div>
-      <div class="body-text" style="color: var(--text-light);">
-        <p>每一座冰山都独一无二，每一刻也都在消融。</p>
-      </div>
-    </div>
-    <div class="fade-in fade-in-delay-2" style="margin-top:30px;">
-      <h3 style="color: var(--amber-light);">冰川崩解</h3>
-      <div class="gold-line"></div>
-      <div class="body-text" style="color: var(--text-light);">
-        <p>伊卢利萨特冰川，每日入海四十米。这不是毁灭，而是循环；是地球写给海洋的，一封永不停歇的信。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 07B · 因纽特村落 · 苔原 · 浆果 -->
-<!-- ============================================ -->
-<section class="section dark-section" data-section="7b">
-  <div class="section-inner">
-    <div class="fade-in">
-      <h3 style="color: var(--amber-light);">因纽特村落</h3>
-      <div class="gold-line"></div>
-    </div>
-    <div class="body-text fade-in" style="color: var(--text-light);">
-      <p>在世界强权的喧嚣之外，仍有人守着自己的日子，遵循着传承千年、贴近自然的生存智慧。</p>
-    </div>
-    <img src="assets/page12_img3.jpeg" class="image-rounded fade-in" alt="因纽特村落" style="width:100%;margin:20px 0;border-radius:6px;">
-    <div class="fade-in" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
-      <div>
-        <img src="assets/page12_img2.jpeg" alt="当地的年轻人" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-        <p class="caption-light" style="text-align:center;margin-top:6px;">当地的年轻人</p>
-      </div>
-      <div>
-        <img src="assets/page12_img1.jpeg" alt="制作格陵兰美食" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-        <p class="caption-light" style="text-align:center;margin-top:6px;">制作格陵兰美食</p>
-      </div>
-    </div>
-
-    <div class="fade-in" style="margin-top:40px;">
-      <h3 style="color: var(--amber-light);">苔原的生灵 · 果</h3>
-      <div class="gold-line"></div>
-      <div class="body-text" style="color: var(--text-light);">
-        <p>欧洲越橘熟了。岩高兰果实的滋味，是兑了三分之一水的青苹果。在冰川、鲸群、荒野之外，我们想用一颗微酸的浆果，让你相信：<span style="color: var(--amber-light);">"格陵兰，是可以用五感活着的地方。"</span></p>
-      </div>
-    </div>
-    <img src="assets/page13_img1.jpeg" class="image-rounded fade-in" alt="岩高兰果实" style="width:100%;margin:20px 0;border-radius:6px;">
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION · 心之所向 — WHO IS THIS FOR -->
-<!-- ============================================ -->
-<section class="full-image-section section" data-section="8a">
-  <div class="full-image-bg" style="background-image: url('assets/page14_img1.jpeg');"></div>
-  <div class="full-image-overlay" style="background: linear-gradient(180deg, rgba(10,15,26,0.3) 0%, rgba(10,15,26,0.15) 40%, rgba(10,15,26,0.7) 100%);"></div>
-  <div class="full-image-content" style="display:flex;flex-direction:column;justify-content:flex-end;min-height:100vh;min-height:100dvh;padding-bottom:60px;">
-    <div class="fade-in" style="text-align:center;">
-      <h2 style="color:white; font-weight:200;">这，是否是您<br>一直心之所向的旅程？</h2>
-      <div class="en-eyebrow" style="color: rgba(255,255,255,0.45); margin-top:16px;">Designed for the discerning few</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION · 家庭 · 好友 · 团队 -->
-<!-- ============================================ -->
-<section class="section content-section" data-section="8b">
-  <div class="section-inner">
-    <div class="fade-in">
-      <h3>家庭出游</h3>
-      <div class="gold-line"></div>
-      <div class="body-text">
-        <p>两三个家庭一起邀约，在遥远的极地，给孩子们一场没有 Wi-Fi 却充满星光的假期。</p>
-      </div>
-    </div>
-    <div class="fade-in" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-      <img src="assets/page14_img2.jpeg" alt="生态研学" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-      <img src="assets/page14_img3.jpeg" alt="青少年营地" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-    </div>
-
-    <div class="fade-in" style="margin-top:36px;">
-      <h3>好友携行</h3>
-      <div class="gold-line"></div>
-      <div class="body-text">
-        <p>几位相识多载的好友，一起约定在世界的尽头喝一杯威士忌，看极光沉入冰海。</p>
-      </div>
-    </div>
-    <img src="assets/page15_img2.jpeg" class="image-rounded fade-in" alt="好友携行" style="width:100%;margin:20px 0;border-radius:6px;">
-
-    <div class="fade-in" style="margin-top:36px;">
-      <h3>团队探险</h3>
-      <div class="gold-line"></div>
-      <div class="body-text">
-        <p>一支追求极致体验的小型团队，以冰海和荒野为舞台，共创一段不可复制的美好记忆。</p>
-      </div>
-    </div>
-    <img src="assets/page15_img3.jpeg" class="image-rounded fade-in" alt="团队探险" style="width:100%;margin:20px 0;border-radius:6px;">
-
-    <div class="fade-in" style="font-family:'Noto Sans SC','OPPOSans','PingFang SC',sans-serif;font-size:1.1rem;font-weight:300;line-height:2;letter-spacing:.08em;padding:20px 0;border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);margin:40px 0 0;text-align:center;">
-      有些旅程，不该被分割<br>
-      这艘船，只为"一起出发的人"而存在<br>
-      <span style="color: var(--amber); font-size:0.9rem;">全船仅 12 席 · 全员包船定制</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION · 极地体验 — EXPERIENCES -->
-<!-- ============================================ -->
-<section class="section content-section" data-section="8c">
-  <div class="section-inner">
-    <div class="fade-in">
-      <div class="section-number">07</div>
-      <div class="en-eyebrow">The Experience</div>
-      <h2>极地体验</h2>
-      <div class="gold-line"></div>
-    </div>
-
-    <img src="assets/page18_img3.jpeg" class="image-rounded fade-in" alt="冰川探险" style="width:100%;margin:20px 0;border-radius:6px;">
-    <div class="tag-list fade-in">
-      <span class="tag">山野徒步</span>
-      <span class="tag">极地摄影</span>
-      <span class="tag">冰川探险</span>
-    </div>
-
-    <div class="fade-in" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;">
-      <img src="assets/page19_img2.jpeg" alt="皮划艇" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-      <img src="assets/page19_img3.jpeg" alt="冲锋艇登陆" style="width:100%;height:160px;object-fit:cover;border-radius:4px;">
-    </div>
-    <div class="fade-in" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
-      <img src="assets/page19_img5.jpeg" alt="无人机观鲸" style="width:100%;height:200px;object-fit:cover;border-radius:4px;">
-      <img src="assets/page19_img6.jpeg" alt="路亚海钓" style="width:100%;height:200px;object-fit:cover;border-radius:4px;">
-    </div>
-    <div class="tag-list fade-in">
-      <span class="tag">皮划艇</span>
-      <span class="tag">露营</span>
-      <span class="tag">冰潜</span>
-      <span class="tag">射击</span>
-      <span class="tag">帆船驾驶</span>
-      <span class="tag">冲锋艇登陆</span>
-      <span class="tag">无人机观鲸</span>
-      <span class="tag">路亚海钓</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!-- SECTION 09 · 我们的团队 — OUR TEAM -->
-<!-- ============================================ -->
-<section class="section dark-section team-section" data-section="9">
-  <div class="section-inner">
-    <div class="fade-in">
-      <div class="section-number-light">08</div>
       <div class="en-eyebrow">Our Team</div>
       <h2><a href="https://whalebay.world/about/" class="team-link">我们的团队</a></h2>
       <div class="gold-line"></div>
     </div>
 
-
-    <div class="team-intro fade-in fade-in-delay-1">
-      <p class="lead">我们不做"服务"，只做"共历"</p>
-      <p>我们的船长熟悉每一道峡湾的暗流，向导能识别某只座头鲸和她的幼崽。外籍帆船厨师深谙当地的极地风味，专属的中餐主厨更懂得熨帖你的中国胃。</p>
-      <p>我们的所有航行都严格遵循丹麦海事安全规范，冲锋舟、救生装备、户外系统一应俱全。</p>
-      <p>但最坚固的保障，是团队十几年极地经验沉淀出的直觉——何时该前进，何时该等待，何时该关掉引擎，让风说话。</p>
-      <p>我们深知，帆船已是北极最温柔的抵达方式，因此更以敬畏之心，积极与当地社区合作，不留痕迹，只留故事。</p>
-    </div>
-
-    <div class="fade-in fade-in-delay-2">
-      <div class="team-subhead">团队组成</div>
-      <div class="gold-line"></div>
-      <div class="tag-list">
-        <span class="tag">当地船务组</span>
-        <span class="tag">国际化中文探险团队</span>
-        <span class="tag">中外双主厨</span>
-      </div>
-      <p class="team-ratio">接近 1:1 的人员配比</p>
-    </div>
-
-    <div class="fade-in fade-in-delay-2">
-      <div class="team-subhead"><a href="https://whalebay.world/about/" class="team-link">核心成员</a></div>
-      <div class="gold-line"></div>
-    </div>
-
-    <div class="team-member fade-in fade-in-delay-2">
-      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/web/page21_img6.jpg" class="team-avatar" alt="姚雪霏" loading="lazy"></a>
+    <div class="team-member fade-in fade-in-delay-1">
+      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/founder-yao.jpg" class="team-avatar" alt="姚雪霏" loading="lazy"></a>
       <div class="team-name">姚雪霏</div>
       <div class="team-role">牛津大学动物生态学博士 · 鲸湾探索 联合创始人</div>
       <div class="team-bio">
@@ -1397,79 +1285,237 @@ h3 {
       </div>
     </div>
 
-    <div class="team-member fade-in fade-in-delay-3">
-      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/web/page21_img5.jpg" class="team-avatar" alt="王海宁" loading="lazy"></a>
+    <div class="team-member fade-in fade-in-delay-2">
+      <a href="https://whalebay.world/about/" class="team-link"><img src="assets/founder-wang.jpg" class="team-avatar" alt="王海宁" loading="lazy"></a>
       <div class="team-name">王海宁</div>
       <div class="team-role">中国南极中山站越冬队员 · 鲸湾探索 联合创始人</div>
       <div class="team-bio">
         <p>2004 至 2006 年驻守南极中山站，从事极光观测、冰芯钻取与野外搜救，获国家海洋局"优秀南极考察队员"。2016 年起专注极地探险，足迹遍及南北极点、格陵兰与斯瓦尔巴。中国极地向导联盟（CPGA）发起人。</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="outbound-link fade-in fade-in-delay-3">
-      <a href="https://arctic.whalebay.world/ilulissat/" target="_blank" rel="noopener">夏日峡湾观鲸 · 另一面格陵兰 →</a>
+<!-- ============================================ -->
+<!-- AGENDA INTRO · 每日行程 -->
+<!-- ============================================ -->
+<section class="section dark-section" data-section="agenda-intro">
+  <div class="section-inner" style="text-align:center;padding:96px 24px;">
+    <div class="fade-in">
+      <div class="en-eyebrow" style="color:var(--amber);">Daily Itinerary</div>
+      <h2 style="font-size:clamp(2.2rem, 6vw, 3.6rem);font-weight:200;letter-spacing:0.2em;color:#fff;margin-bottom:18px;">每日行程</h2>
+      <span class="gold-line-center"></span>
+      <p style="margin-top:24px;color:var(--lilac);font-family:'Noto Serif SC','PingFang SC',serif;font-size:1.1rem;letter-spacing:0.16em;line-height:2;">13 天 · 自阿纳德尔（俄属）启航<br>一日一页 · 一程一景</p>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!-- SECTION · 参考行程 — ITINERARY OVERVIEW -->
+<!-- DETAILED AGENDA · 13 DAY-PAGES -->
 <!-- ============================================ -->
-<section class="section content-section score-section" data-section="10">
-  <div class="section-inner">
+
+<section class="full-image-section section" data-section="day-1">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-08.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 1</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Embarkation</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">启航 · 海湾初晤</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>抵达楚科奇行政中心阿纳德尔，登船入住，欢迎酒会，结识探险队员。<br>船尾甲板偶见白鲸。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-2">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-11.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 2</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Whale Bone Alley</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">鲸骨 · 古道访幽</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>登陆伊特格拉恩岛，徒步鲸骨小道——16 世纪前古爱斯基摩人以弓头鲸骨竖立而成的圣地。<br>下午冲锋艇巡游谢尼亚文海峡，俄罗斯远东最佳观鲸海域，<br>可见座头鲸、灰鲸与白鲸。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-3">
+  <div class="full-image-bg" style="background-image:url('assets/extra/dezhnev-03.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 3</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Cape Dezhnev</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">极东 · 角石望洋</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>立于欧亚大陆最东之角，徒步至杰日尼奥夫探险家纪念灯塔。<br>晴日可遥望 86 公里外的阿拉斯加海岸。<br>抵达乌埃连——欧亚最东定居点、楚科奇骨雕艺术中心，<br>参观最古老的工坊，品尝鲸肉、海象、鱼子酱等北方风味。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-4">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-04.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 4</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Kolyuchin Island</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">鸟崖 · 弃站怀荒</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>登陆仅 8 平方公里的科柳钦岛——爱斯基摩语意为"大浮冰"，岛形圆若漂流之冰。<br>1992 年废弃的气象站如今只余荒凉建筑。<br>岛上是北极最壮观的鸟崖之一，海鸠、海雀、海鸥群栖于崖；<br>岸边偶见北极熊踪迹。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-5">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-14.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 5</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Wrangel — First Landing</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">登岛 · 熊之故乡</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>首次踏上弗兰格尔岛——全球北极熊产仔密度最高之地，<br>UNESCO 世界自然遗产，最后一群猛犸象的避难所。<br>冲锋艇巡岸，远观礁石上的母子熊。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-6">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-07.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 6</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Tundra & Musk Ox</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">苔原 · 麝牛凝望</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>弗兰格尔苔原徒步。<br>岛上唯一原生的大型哺乳动物——麝牛在金黄苔原上悠然觅食；<br>北极狐与北极兔来去如影。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-7">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-12.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 7</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Herald Island</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">赫岛 · 万物孤光</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>登陆赫勒尔德岛——地球上最少有人涉足的岛屿之一。<br>海象群在礁石上栖息，海雀在悬崖上盘旋。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-8">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-13.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 8</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Mother & Cub Watch</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">静观 · 母子日常</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>在弗兰格尔母熊产仔之地停留一日。<br>不登陆，仅静观，长焦镜头记录母子日常。<br>这是世界上最罕见的极地母性时刻。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-9">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-16.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 9</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Kolyuchin Bay</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">湾巡 · 巨兽千载</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>冲锋艇沿科柳钦湾崎岖海岸巡游。<br>可见鲸群、海象栖息地，与无数筑巢的北极海鸟。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-10">
+  <div class="full-image-bg" style="background-image:url('assets/extra/lavrentiya-01.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 10</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Lavrentiya Village</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">村落 · 楚科奇心</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>白令海峡之滨的拉夫连季亚村，<br>原住民坚守传统生活的文化心脏，<br>每年举办"白令亚"传统皮筏盛会。<br>漫步村落，参观纪念碑与博物馆，聆听楚科奇民族的故事。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-11">
+  <div class="full-image-bg" style="background-image:url('assets/extra/senyavin-springs-01.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 11</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Senyavin Hot Springs</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">温泉 · 苔原秘境</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>可选六小时穿越白令亚国家公园的徒步：<br>蜿蜒峡湾、绵延丘陵、北极花苔原。<br>终点在谢尼亚文温泉——普罗维登斯基地区最大地热区，<br>150 余处温泉涌出地表，水温至 80℃，富含矿物与氡。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-12">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-20.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 12</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Meechkyn Walrus Haul-Out</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">沙嘴 · 万象之海</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>抵达长 60 公里、平均宽仅 100 米的米奇金沙嘴——<br>动物学自然保护区。<br>海象与海豹栖息岸边，珍稀鸟类筑巢；<br>冲锋艇近距离观察百里海象巨群。</p>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section section" data-section="day-13">
+  <div class="full-image-bg" style="background-image:url('assets/photos/gallery-06.jpg');"></div>
+  <div class="full-image-overlay" style="background:linear-gradient(180deg,rgba(7,12,18,.45) 0%,rgba(7,12,18,.18) 38%,rgba(7,12,18,.88) 100%);"></div>
+  <div class="full-image-content">
+    <div class="fade-in"><div class="day-hero-number">DAY 13</div></div>
+    <div class="en-eyebrow fade-in fade-in-delay-1" style="color:var(--amber-light);">Return to Anadyr</div>
+    <h2 class="fade-in fade-in-delay-1" style="color:#fff;">归港 · 心留极地</h2>
+    <div class="gold-line"></div>
+    <div class="body-text fade-in fade-in-delay-2" style="color:rgba(255,255,255,.92);">
+      <p>清晨返航阿纳德尔，告别船员；<br>依航班安排接送至酒店或机场。<br>归家后将收到一份礼物——本次航程的纪录片。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- RESERVATION -->
+<!-- ============================================ -->
+<section class="section content-section score-section" data-section="reserve">
+  <div class="section-inner" style="text-align:center;">
     <div class="fade-in">
-      <div class="section-number-light">09</div>
-      <div class="en-eyebrow">Itinerary Overview</div>
-      <h2>参考行程</h2>
-      <div class="gold-line"></div>
+      <div class="en-eyebrow" style="color:var(--amber);">Reserve · 2026 Polar Charter</div>
+      <h2 style="color:var(--text-dark);">北极私属航季</h2>
+      <div class="gold-line-center"></div>
     </div>
-
-    <div class="day-ribbon">
-      <div class="day-row fade-in fade-in-delay-1">
-        <div class="day-label">DAY 1</div>
-        <div class="day-body">
-          <div class="place">启航 · 荒村夜泊</div>
-          <div class="desc">启航冰海，夜泊库尔诺克无人村畔</div>
-        </div>
-      </div>
-      <div class="day-row fade-in fade-in-delay-2">
-        <div class="day-label">DAY 2</div>
-        <div class="day-body">
-          <div class="place">遗村 · 冰湾炙霞</div>
-          <div class="desc">探百年荒村遗迹，午后航行冰峡湾，甲板烧烤迎浮冰晚照</div>
-        </div>
-      </div>
-      <div class="day-row fade-in fade-in-delay-2">
-        <div class="day-label">DAY 3</div>
-        <div class="day-body">
-          <div class="place">猎技 · 峡湾锚宴</div>
-          <div class="desc">体验因纽特传统射击，锚泊苏鲁苏古蒂鲁，静待极光</div>
-        </div>
-      </div>
-      <div class="day-row fade-in fade-in-delay-3">
-        <div class="day-label">DAY 4</div>
-        <div class="day-body">
-          <div class="place">手钓 · 秘湾鲜烹</div>
-          <div class="desc">亲手海钓银鳞，于隐秘峡湾现烹当日渔获，极光下盛宴</div>
-        </div>
-      </div>
-      <div class="day-row fade-in fade-in-delay-3">
-        <div class="day-label">DAY 5</div>
-        <div class="day-body">
-          <div class="place">追光 · 舍不得睡</div>
-          <div class="desc">穿冰峡返航，过库奎特，再等一次极光之约</div>
-        </div>
-      </div>
-      <div class="day-row fade-in fade-in-delay-3">
-        <div class="day-label">DAY 6</div>
-        <div class="day-body">
-          <div class="place">归港 · 海市拾光</div>
-          <div class="desc">清晨告别，飞向日常，心留极地</div>
-        </div>
-      </div>
+    <div class="fade-in fade-in-delay-1" style="margin-top:30px;font-family:'Noto Sans SC','OPPOSans','PingFang SC',sans-serif;font-size:1.05rem;line-height:2.2;color:var(--text-body);">
+      <p><strong>2026 · 8月20日 — 9月3日</strong></p>
+      <p>13 天 · 阿纳德尔 ↔ 阿纳德尔</p>
+      <p>赫罗莫夫教授号</p>
+      <p>全船 40 席 · 一年一会</p>
     </div>
-
-    <div class="score-note">注：每日行程仅供参考，包船行程可单独定制。</div>
+    <div class="fade-in fade-in-delay-2" style="margin-top:42px;padding-top:30px;border-top:1px solid var(--divider);">
+      <p style="color:var(--amber);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.4em;">CONTACT</p>
+      <p style="color:var(--text-body);font-size:.95rem;margin-top:10px;letter-spacing:.05em;">whalebayexpedition@gmail.com</p>
+    </div>
   </div>
 </section>
 
